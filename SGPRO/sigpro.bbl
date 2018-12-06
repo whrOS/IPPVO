@@ -1,0 +1,17 @@
+\begin{thebibliography}{1}
+\expandafter\ifx\csname url\endcsname\relax
+  \def\url#1{\texttt{#1}}\fi
+\expandafter\ifx\csname urlprefix\endcsname\relax\def\urlprefix{URL }\fi
+\expandafter\ifx\csname href\endcsname\relax
+  \def\href#1#2{#2} \def\path#1{#1}\fi
+
+\bibitem{Li2013PVO}
+X.~Li, j.~Li, B.~Li, B.~Yang, High-fidelity reversible data hiding scheme based
+  on pixel-value-ordering and prediction-error expansion, Signal Process.
+  93~(1) (2013) 198--205.
+
+\bibitem{Qu2015PPVO}
+X.~Qu, H.~J. Kim, Pixel-based pixel value ordering predictor for high-fidelity
+  reversible data hiding, Signal Process. 111 (2015) 249--260.
+
+\end{thebibliography}

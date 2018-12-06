@@ -1,0 +1,60 @@
+\documentclass[review,3p,10pt,sort&compress]{elsarticle}
+%\documentclass[preprint,5p,10pt,sort&compress]{elsarticle}
+
+\usepackage{amsfonts,amsmath,amssymb,graphicx,dsfont,color}
+\usepackage{multirow}
+\usepackage[tight,normalsize,sf,sf]{subfigure}
+\usepackage{epstopdf}
+
+\journal{Signal Processing}
+\linespread{1.25}
+
+\begin{document}
+
+\begin{frontmatter}
+
+\title {Improved PPVO}
+
+\author{Haorui Wu}
+\ead{hrwu@bjtu.edu.cn}
+
+\author{Xiaolong Li}
+\ead{lixl@bjtu.edu.cn}
+
+\author{Yao Zhao\corref{cor}}
+\cortext[cor]{Corresponding author. Tel./Fax:  +86 10 51688667.}
+\ead{yzhao@bjtu.edu.cn}
+
+\author{Rongrong Ni}
+\ead{rrni@bjtu.edu.cn}
+
+\address[mymainaddress]{Institute of Information Science, Beijing Jiaotong University, Beijing 100044, China}
+\address[mysecondaryaddress]{Beijing Key Laboratory of Advanced Information Science and Network Technology, Beijing 100044, China}
+
+\begin{abstract}
+\end{abstract}
+
+
+\begin{keyword}
+   Reversible data hiding\sep pixel-value-ordering\sep adaptive embedding\sep multiple histograms modification
+\end{keyword}
+
+\end{frontmatter}
+
+%----------------------------------------------------------------------------------------
+\section{Introduction}\label{sec:1}
+
+%----------------------------------------------------------------------------------------
+\section{Related Works}\label{sec:2}
+In this section, as prior knowledge, we will review the original PVO-based RDH method of Li \emph{et al.} \cite{Li2013PVO} and the Pixel-based RDH(PPVO) of \cite{Qu2015PPVO}. And the data embedding amd extraction procedures are presented followed.
+
+\subsection{PVO-based RDH}\label{sec:2.1}
+
+\subsection{Pixel-based PVO RDH}\label{sec:2.2}
+
+\bibliographystyle{elsarticle-num}
+
+\bibliography{Cited}
+
+
+\end{document}
