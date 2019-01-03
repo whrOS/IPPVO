@@ -35,10 +35,10 @@
 }
 
 4
-@article{Ou2014PVOk,
+@article{Ou2014Reversible,
   title={Reversible data hiding using invariant pixel-value-ordering and prediction-error expansion},
   author={Ou, Bo and Li, Xiaolong and Zhao, Yao and Ni, Rongrong},
-  journal={Signal Process.: Image Commun.},
+  journal={Image Communication},
   volume={29},
   number={7},
   pages={760-772},

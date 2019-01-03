@@ -481,6 +481,27 @@ for i = 2 : 1 : Tmax
     d4(i) = 0.5*h4{i}(1) + sum(h4{i}(2:end));
 end
 
+%% 2.2ͼʾ
+i=4;
+Idx = numel(C1);
+idx = numel(c1);
+if isempty(Idx) || isempty(idx)
+    fprintf("Image %s's Capacity less than %d with size of %d\n", Iname, EC, i);
+else
+    histi = h4{idx};
+    
+    maxR = max([histi]);
+
+    f = figure('Name',Iname);
+    bar([histi']);
+    axis([0 10.5 0 maxR+1000]);
+    set(gca,'xticklabel',{' ','0','1','2','3','4','5','6','7','8','9','10'});
+    xlabel('{\itp}', 'FontSize', 16);
+    ylabel('Occurrence', 'FontSize', 16);
+    
+%     set(gca,'fontsize',16);
+%     title([Iname  'Context Pixel Dist: ' num2str(i)]);
+end
 
 %% Context Pixels of Distance Equal to 1
 i = 1;

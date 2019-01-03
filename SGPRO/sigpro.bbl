@@ -5,13 +5,22 @@
 \expandafter\ifx\csname href\endcsname\relax
   \def\href#1#2{#2} \def\path#1{#1}\fi
 
+\bibitem{Peng2014IPVO}
+F.~Peng, X.~Li, B.~Yang, Improved pvo-based reversible data hiding, Digit.
+  Signal Process. 25~(2) (2014) 255--265.
+
+\bibitem{Qu2015PPVO}
+X.~Qu, H.~J. Kim, Pixel-based pixel value ordering predictor for high-fidelity
+  reversible data hiding, Signal Process. 111 (2015) 249--260.
+
 \bibitem{Li2013PVO}
 X.~Li, j.~Li, B.~Li, B.~Yang, High-fidelity reversible data hiding scheme based
   on pixel-value-ordering and prediction-error expansion, Signal Process.
   93~(1) (2013) 198--205.
 
-\bibitem{Qu2015PPVO}
-X.~Qu, H.~J. Kim, Pixel-based pixel value ordering predictor for high-fidelity
-  reversible data hiding, Signal Process. 111 (2015) 249--260.
+\bibitem{Ou2014PVOk}
+B.~Ou, X.~Li, Y.~Zhao, R.~Ni, Reversible data hiding using invariant
+  pixel-value-ordering and prediction-error expansion, Signal Process.: Image
+  Commun. 29~(7) (2014) 760--772.
 
 \end{thebibliography}

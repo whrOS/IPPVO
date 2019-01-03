@@ -245,8 +245,8 @@ Here, the symbol definitions are the same as the definitions in section \ref{sec
 S_5 = \{ x | \max(C)   =  \min(C), x > \max(C), \max(C)   \neq  254 \} \\
 \end{array}.
 \end{equation*}
-And, for each pixel $x$, the prediction-error is calculated by
-\begin{equation}\label{eq:EPPVOPE}
+And, for each pixel $x$, the prediction-error is calculated by 
+\begin{equation}\label{eq:PPVOPE}
 p = \left\{\begin{array}{ll}
 x - \max(C),    & \text{if } x \in S_1  \\
 \min(C) - x,    & \text{if } x \in S_2 \cup S_3 \\
@@ -255,77 +255,17 @@ x - \max(C) - 1,& \text{if } x \in S_5  \\
 {\rm skip},     & \text{otherwise}
 \end{array}\right.,
 \end{equation}
-where prediction-error $p$ is located in the interval of $[0, \infty)$. By the extended PPVO predictor, with the situation of $\max(C) = \min(C)$, pixel $x$ satisfying $x > \max(C)$ is utilized to obtain prediction-errors. More pixels participate in prediction procedure, leading to an increase in embedding capacity.
+where prediction-error $p$ is located in the interval of $[0, \infty)$. By the extended PPVO predictor, with the situation of $\max(C) = \min(C)$, pixel $x$ satisfying $x > \max(C)$ is utilized to obtain prediction-errors. More pixels participate in prediction procedure, leading to an increase in embedding capacity. 
+% for reversibility
+a
+
 
 % show the example of histogram, comparatione and reasons.
-% NL = max(C)-min(C)
-For extended PPVO predictor, more surrounding pixels are fully considered as pixel context to predict current pixel, aiming to get sharper histogram. To show the superiority of extended PPVO predictor, compared with Qu \emph{et al.}' method, an comparison shown in Fig. \ref{Fig.ComparisonEPPVO}. In the example, eight standard gray-scale $512 \times 512$ sized images  are used and comparison of normalized PEHs of proposed extended PPVO predictor and PPVO predictor are displayed on the same figures. It is obviously that normalized PEHs of extended PPVO predictor have higher peaks at $0$, and the distributions are sharper, which is beneficial to the final embedding performance. Moreover, in the next data embedding procedure, pixels of $p = 0$ are used to embed secret data by expanding and others are shifted to ensure reversibility. Thus, we use embedding distortion of one bit data embedding to evaluate the distortion caused by histograms theoretically, numerically expressed as
-\begin{equation*}\label{eq:EvaluateHistogram}
-{\rm \mathbf{Eval}} = \frac{{\rm H}(0)}{\frac{1}{2}{\rm H}(0)+ \sum_{i \geq 1}{\rm H}(i)},
-\end{equation*}
-where ${\rm H}$ is the PEH and ${\rm H}(i)$ is the frequency of pixels whose prediction-errors $p = i$. This evaluation describes the distortion caused by embedding one bit data on the PEH ${\rm H}$. In Lena, Baboon and Airplane, ${\rm \mathbf{Eval}}$ of extended PPVO predictor are 2.07, 6.88 and 1.44, while value of evaluation are 2.81, 7.90 and 1.76 of PPVO predictor. And in Baboon
-\begin{figure*}
-\centering
-\subfigure[Lena]{
-    \begin{minipage}[t]{0.225\linewidth}
-    \centering
-    \includegraphics[width=1\textwidth]{figures/Comparison/lena.pdf}
-    \end{minipage}
-}
-\subfigure[Baboon]{
-    \begin{minipage}[t]{0.225\linewidth}
-    \centering
-    \includegraphics[width=1\textwidth]{figures/Comparison/baboon.pdf}
-    \end{minipage}
-}
-\subfigure[Airplane]{
-    \begin{minipage}[t]{0.225\linewidth}
-    \centering
-    \includegraphics[width=1\textwidth]{figures/Comparison/airplane.pdf}
-    \end{minipage}
-}
-\subfigure[Barbara]{
-    \begin{minipage}[t]{0.225\linewidth}
-    \centering
-    \includegraphics[width=1\textwidth]{figures/Comparison/barbara.pdf}
-    \end{minipage}
-}
-
-
-\subfigure[Lake]{
-    \begin{minipage}[t]{0.225\linewidth}
-    \centering
-    \includegraphics[width=1\textwidth]{figures/Comparison/lake.pdf}
-    \end{minipage}
-}
-\subfigure[Peppers]{
-    \begin{minipage}[t]{0.225\linewidth}
-    \centering
-    \includegraphics[width=1\textwidth]{figures/Comparison/peppers.pdf}
-    \end{minipage}
-}
-\subfigure[Boat]{
-    \begin{minipage}[t]{0.225\linewidth}
-    \centering
-    \includegraphics[width=1\textwidth]{figures/Comparison/boat.pdf}
-    \end{minipage}
-}
-\subfigure[Eliane]{
-    \begin{minipage}[t]{0.225\linewidth}
-    \centering
-    \includegraphics[width=1\textwidth]{figures/Comparison/elaine.pdf}
-    \end{minipage}
-}
-\centering
-\caption{Comparison of normalized prediction-errors $p$ of extended PPVO with equation (\ref{eq:EPPVOPE}) in blue and PPVO with equation (\ref{eq:PPVOPE}) in orange.}
-\label{Fig.ComparisonEPPVO}
-\end{figure*}
-
 
 % embedding procedure
-Next,
+Next, 
 
-% for reversibility
+
 
 \subsection{Multi-size based Embedding Method for MHM}\label{sec:3.2}
 
