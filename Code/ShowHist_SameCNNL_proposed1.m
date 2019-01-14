@@ -20,7 +20,7 @@ mask3 = [false, false, false, true, true;
 Imgs = {'Lena', 'Baboon', 'Airplane', 'Barbara', 'Lake', 'Peppers', 'Boat', 'Elaine'};
 
 %%
-tt = 2;
+tt = 1;
 Iname = Imgs{tt};
 istr = ['ShowHist_',Iname,'.mat'];
 fprintf('%s\n', istr);

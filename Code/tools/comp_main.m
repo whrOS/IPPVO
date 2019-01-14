@@ -70,7 +70,7 @@ function comp_main(name, mtds, EC)
     set(gca, 'GridAlpha', 1);
     set(gca, 'box', 'on');
 %     set (gca,'position',[0.1,0.1,0.9,0.9] );
-    set(gcf,'unit','normalized','position',[0.1,0.1,0.25,0.3]);
+    set(gcf,'unit','normalized','position',[0.1,0.1,0.3,0.35]);
     axis normal;
     set(gca,'FontSize',14);
 %     saveas(h,[name '.png'],'png');
