@@ -45,6 +45,9 @@ reversible data hiding (RDH)
 %----------------------------------------------------------------------------------------
 \section{Introduction}\label{sec:1}
 % PEH PVO MHM
+Recently, the tampering and dissemination of multimedia data is becoming more and more convenient. In order to verify the integrity and security of information, technologies such as information encryption, fingerprint recognition and data hiding have been extensively studied. Among them, reversible data hiding(RDH) is a technology that embeds secret data into image in an imperceptible way and the decoder can recover the original content lossless from the marked image while extracting the secret data.
+
+To this day, 
 
 %----------------------------------------------------------------------------------------
 \section{Related Works}\label{sec:2}
@@ -438,60 +441,59 @@ In this section, experimental results of proposed method are presented. The perf
 Firstly, we consider the impact of number of context sizes $N$ to the embedding capacity. As shown in Fig. \ref{fig:size}, for each given capacity, $N$ is from $2$ to $4$, corresponding the sizes $C_1 \in \{C_1\}$, $C_{12} \in \{C_1, C_2\}$, $C_{123} \in \{C_1, C_2, C_3\}$ and $C_{1234} \in \{C_1, C_2, C_3, C_4\}$, respectively. It shows that although the embedding performance increases with the increase of $N$, it is already very small when $N = 4$. Therefore, balancing the embedding performance and embedding time complexity, we set $N = 4$ as a suitable size number. There are four complexity thresholds $\{T_1, T_2, T_3, T_4\}$ to context pixels for the current pixel, and The smoother the area where the pixel is, the less context pixels are used to predict. For a given embedding capacity, embedding procedure can be implemented less than four seconds.
 % table of optimal thresholds
 
-
 \begin{figure*}
 \centering
 \subfigure{
-\begin{minipage}[t]{0.45\linewidth}
+\begin{minipage}[t]{0.39\linewidth}
 \centering
 \includegraphics[width=1\textwidth]{figures/Result/size/Lena.pdf}
 \end{minipage}
 }
 \qquad
 \subfigure{
-\begin{minipage}[t]{0.46\linewidth}
+\begin{minipage}[t]{0.4\linewidth}
 \centering
 \includegraphics[width=1\textwidth]{figures/Result/size/Baboon.pdf}
 \end{minipage}
 }
 
 \subfigure{
-\begin{minipage}[t]{0.45\linewidth}
+\begin{minipage}[t]{0.39\linewidth}
 \centering
 \includegraphics[width=1\textwidth]{figures/Result/size/Airplane.pdf}
 \end{minipage}
 }
 \qquad
 \subfigure{
-\begin{minipage}[t]{0.45\linewidth}
+\begin{minipage}[t]{0.39\linewidth}
 \centering
 \includegraphics[width=1\textwidth]{figures/Result/size/Barbara.pdf}
 \end{minipage}
 }
 
 \subfigure{
-\begin{minipage}[t]{0.45\linewidth}
+\begin{minipage}[t]{0.39\linewidth}
 \centering
 \includegraphics[width=1\textwidth]{figures/Result/size/Lake.pdf}
 \end{minipage}
 }
 \qquad
 \subfigure{
-\begin{minipage}[t]{0.45\linewidth}
+\begin{minipage}[t]{0.39\linewidth}
 \centering
 \includegraphics[width=1\textwidth]{figures/Result/size/Boat.pdf}
 \end{minipage}
 }
 
 \subfigure{
-\begin{minipage}[t]{0.45\linewidth}
+\begin{minipage}[t]{0.39\linewidth}
 \centering
 \includegraphics[width=1\textwidth]{figures/Result/size/Peppers.pdf}
 \end{minipage}
 }
 \qquad
 \subfigure{
-\begin{minipage}[t]{0.45\linewidth}
+\begin{minipage}[t]{0.39\linewidth}
 \centering
 \includegraphics[width=1\textwidth]{figures/Result/size/Elaine.pdf}
 \end{minipage}
@@ -505,52 +507,52 @@ Firstly, we consider the impact of number of context sizes $N$ to the embedding 
 \begin{figure*}
 \centering
 \subfigure{
-\begin{minipage}[t]{0.475\linewidth}
+\begin{minipage}[t]{0.415\linewidth}
 \centering
 \includegraphics[width=1\textwidth]{figures/Result/capacity/Lena.pdf}
 \end{minipage}
 }
 \subfigure{
-\begin{minipage}[t]{0.49\linewidth}
+\begin{minipage}[t]{0.43\linewidth}
 \centering
 \includegraphics[width=1\textwidth]{figures/Result/capacity/Baboon.pdf}
 \end{minipage}
 }
 
 \subfigure{
-\begin{minipage}[t]{0.475\linewidth}
+\begin{minipage}[t]{0.415\linewidth}
 \centering
 \includegraphics[width=1\textwidth]{figures/Result/capacity/Airplane.pdf}
 \end{minipage}
 }
 \subfigure{
-\begin{minipage}[t]{0.475\linewidth}
+\begin{minipage}[t]{0.415\linewidth}
 \centering
 \includegraphics[width=1\textwidth]{figures/Result/capacity/Barbara.pdf}
 \end{minipage}
 }
 
 \subfigure{
-\begin{minipage}[t]{0.475\linewidth}
+\begin{minipage}[t]{0.415\linewidth}
 \centering
 \includegraphics[width=1\textwidth]{figures/Result/capacity/Lake.pdf}
 \end{minipage}
 }
 \subfigure{
-\begin{minipage}[t]{0.475\linewidth}
+\begin{minipage}[t]{0.42\linewidth}
 \centering
 \includegraphics[width=1\textwidth]{figures/Result/capacity/Boat.pdf}
 \end{minipage}
 }
 
 \subfigure{
-\begin{minipage}[t]{0.475\linewidth}
+\begin{minipage}[t]{0.415\linewidth}
 \centering
 \includegraphics[width=1\textwidth]{figures/Result/capacity/Peppers.pdf}
 \end{minipage}
 }
 \subfigure{
-\begin{minipage}[t]{0.475\linewidth}
+\begin{minipage}[t]{0.415\linewidth}
 \centering
 \includegraphics[width=1\textwidth]{figures/Result/capacity/Elaine.pdf}
 \end{minipage}

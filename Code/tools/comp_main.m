@@ -73,11 +73,9 @@ function comp_main(name, mtds, EC)
     set(gcf,'unit','normalized','position',[0.1,0.1,0.3,0.35]);
     axis normal;
     set(gca,'FontSize',14);
-%     saveas(h,[name '.png'],'png');
-%     saveas(h,[name '.fig'],'fig');
-    saveas(h,[name '.eps'],'psc2');
-%     set(gcf, 'PaperPosition', [0 0 26 26]);
+%     saveas(h,[name '.eps'],'psc2');
     set(gcf, 'PaperSize', [16.5 12.5]);
-    saveas(h,[name '.pdf'],'pdf');
+%     saveas(h,[name '.pdf'],'pdf');
+    saveas(h,[name '.jpg'],'jpg');
     hold off;
 end

@@ -11,7 +11,7 @@ disp('show result');
 names = {
     { 'Lena';     36000; };
     { 'Baboon';   11000; };
-    { 'Airplane'; 60000; }; 
+    { 'Airplane'; 60000; };
     { 'Boat';     25000; };
     { 'Peppers';  29000; };
     { 'Lake';     26000; };
@@ -22,7 +22,7 @@ names = {
 mtds = {
 %     {'Proposed'; '2018'; ':o';  'k'};
     {'Proposed'; '2019'; '-o';  'k'};
-    {'PPVO'; '2015'; ':o';  'b'};
+%     {'PPVO'; '2015'; ':o';  'b'};
     {'IPVO'; '2013'; ':o';  'r'};
     {'PVOK'; '2014'; ':o';  'g'};
 %     {'PVO';  '2013'; ':o'; 'b'}; 
