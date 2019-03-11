@@ -44,14 +44,21 @@ reversible data hiding (RDH)
 
 %----------------------------------------------------------------------------------------
 \section{Introduction}\label{sec:1}
-% PEH PVO MHM
-Recently, the tampering and dissemination of multimedia data is becoming more and more convenient. In order to verify the integrity and security of information, technologies such as information encryption, fingerprint recognition and data hiding have been extensively studied. Among them, reversible data hiding(RDH) is a technology that embeds secret data into image in an imperceptible way and the decoder can recover the original content lossless from the marked image while extracting the secret data.
+% RDH PEH PVO MHM
+In recent past, the tampering and dissemination of multimedia data have been getting more and more convenient. In order to verify the integrity and security of information, technologies such as information encryption, fingerprint recognition and data hiding have been extensively studied. Among them, reversible data hiding(RDH) is a technology that embeds secret data into image in an imperceptible way and the decoder can recover the original content lossless from the marked image while extracting the secret data.
 
-To this day, 
+Up to now, RDH has been extensively explored and many types of techniques such as difference expansion(DE), histogram shifting(HS) and prediction-error expansion(PEE) have emerged. Among the techniques, the first DE-based method is proposed by Tian \emph{et al.} which expands the difference between adjacent pixels to achieve embedding procedure. By embedding data into the differences, the high fidelity is guaranteed. HS-based methods achieve embedding by shifting pixels according to the peak-gap distribution of image histogram. However, embedding capacity and distortion is mainly sensitive to characteristic of the histogram. Besides, unlike DE-based and HS-based methods, PEE is the most influential RDH technique due to its balance between distortion and capacity. PEE is first proposed by Thodi and Rodriguez in .... In this PEE-based method, pixels are first predicted by adjacent pixels and then accurately predicted pixels are modified by expanding the prediction-errors for embedding, while the others are shifted to ensure the reversibility. Focus on the pixel prediction or modification of prediction-errors, many methods are proposed, e.g., accurate predictor design for prediction-error histogram(PEH), high-dimension histogram modification and multiple histogram modification(MHM).
+
+Among the PEE-based methods, pixel-value-order(PVO) is the most critical technology which provides an accurate prediction method. The original PVO-based method is proposed by Li \emph{et al.}. For the data embedding, the cover image is first divided into equal size and non-overlapping blocks. Then, in each block, the pixels are sorted in an ascending order. And the largest/smallest pixel value is predicted by the second largest/smallest pixel value to derive the prediction-error. At last, for the generated PEH, a expansion/shift modification is carried out on each prediction-error for embedding. In the original PVO-based RDH, it is note that smooth blocks can not be used for embedding. Due to this reason, Peng \emph{et al.} propose an improved PVO method which considers the original order of the largest/smallest pixel value and the second the largest/smallest pixel value, resulting in the fully utilized of smooth blocks. Meanwhile, Ou \emph{et al.} propose the PVO-$k$ scheme which modifies the first several largest/smallest pixel values at the same time to overcome the same shortage. Furthermore, Qu \emph{et al.} notice that lots of pixels are omitted in embedding procedure because of the block constraint. Thus, they proposed a pixel-based PVO method. The target pixel is predicted by the the largest/smallest neighbor context pixels and it gets a high embedding capacity by the pixel-by-pixel strategy.
+In addition, from the same motivation, Wang \emph{et al.} divide the cover image into two size blocks due to the region complexities, and further exploit the correlation of pixels in smooth regions.
+
+In this method, ...
+
+The rest of the paper is arranged as follow. Section \ref{sec:2} is a brief review of the two classical PVO-based RDH methods. Section \ref{sec:3} is the introduction pf the proposed extended pixel-based PVO method. Section \ref{sec:4} shows the experimental results. Finally, Section \ref{sec:5} concludes the paper.
 
 %----------------------------------------------------------------------------------------
 \section{Related Works}\label{sec:2}
-In this section, as prior knowledge, we will review the improved PVO-based RDH method of Peng \emph{et al.} \cite{Peng2014IPVO} and the Pixel-based PVO RDH(PPVO) method of Qu \emph{et al.} \cite{Qu2015PPVO}. And the data embedding amd extraction procedures are presented followed.
+In this section, as prior knowledge, we will review the improved PVO-based RDH method of Peng \emph{et al.} \cite{Peng2014IPVO} and the Pixel-based PVO RDH(PPVO) method of Qu \emph{et al.} \cite{Qu2015PPVO}. And the data embedding amd extraction procedures are presented followed. 
 
 \subsection{Improved PVO-based RDH \cite{Peng2014IPVO}}\label{sec:2.1}
 In original PVO-based method \cite{Li2013PVO} of Li \emph{et al.}, first, the cover image is divided into equal size and non-overlapping blocks with size of $n = a \times b$. And then pixels $(x_{1},...,x_{n})$ in the given block is sorted in ascending by the pixel values, to obtained $(x_{\xi(1)},...,x_{\xi(n)})$, where $\xi : \{1,...,n\} \rightarrow \{1,...,n\}$ is the one-to-one mapping which respecting the rules of $\xi(i) < \xi(j)$ if $x_{i} = x_{j}$ ($i < j$). Then, the largest pixel $x_{\xi(n)}$ is predicted by the second largest pixel $x_{\xi(n-1)}$ and the prediction-error of $x_{\xi(n)}$ is defined as $p_{\rm max} = x_{\xi(n)} - x_{\xi(n-1)}$, where the prediction-error is subject to the interval of $[0, \infty)$ due to the truth $x_{\xi(n)} \geq x_{\xi(n-1)}$. In this method, $p_{\rm max} = 1$ appears  most often so that prediction-errors of $p_{\rm max} = 1$ are expanded to embed data while others of $p_{\rm max} > 1$
@@ -220,7 +227,7 @@ The experimental results show that PPVO gets a large maximum embedding capacity 
 % motivation and simply description
 In this section, a extended PPVO predictor is first introduced. Then, a multi-size based embedding method for MHM is proposed to further improve the performance. Finally, the embedding procedure and extraction procedure is described.
 
-sec:2.1\subsection{Extended PPVO predictor}\label{sec:3.1}
+\subsection{Extended PPVO predictor}\label{sec:3.1}
 Compared with PVO-based methods such as PVO\cite{Li2013PVO}, IPVO\cite{Peng2014IPVO} and PVO-\emph{k}\cite{Ou2014PVOk}, in PPVO, every pixel is predicted by context pixels, breaking through the block constraint. In PPVO, to ensure reversibility, pixels in lower right direction are utilized as context region to predict the current pixel which is shown in Fig. \ref{Fig.Context}(a). The prediction is more accurate, however, the surrounding context information is not fully utilized. There are some other pixels are omitted which is beneficial to provide more useful information for prediction. Clearly, for example, in Fig. \ref{Fig.Context}(b), pixels $\{c_{4}, c_{9}, c_{10}, c_{12}, c_{17}, c_{18}, c_{21}, c_{22}, c_{24}\}$ in left lower direction should be used in prediction procedure as one part of context pixels which is omitted in PPVO. Then the extended PPVO predictor is introduced to show how to make better prediction.
 \begin{figure*}
 \centering
@@ -242,7 +249,7 @@ Compared with PVO-based methods such as PVO\cite{Li2013PVO}, IPVO\cite{Peng2014I
 \label{Fig.Context}
 \end{figure*}
 
-Here, the symbol definitions are the same as the definitions in section \ref{sec:2}. In Fig. \ref{Fig.Context}, the number of context pixels is $CN = 24$, where context pixel vector is $C = (c_{1}, ..., c_{24})$. And the prediction procedure is described as follow. Compared with PPVO, except the four sets $S_1, S_2, S_3$ amd $S_4$, another set is defined as
+Here, the symbol definitions are the same as the definitions in section \ref{sec:2}. In Fig. \ref{Fig.Context}, the number of context pixels is $CN = 24$, where context pixel vector is $C = (c_{1}, ..., c_{24})$. And the prediction procedure is described as follow. Compared with PPVO, except the four sets $S_1, S_2, S_3$ and $S_4$, another set is defined as
 \begin{equation*}\label{eq:S_5}
 \begin{array}{ll}
 S_5 = \{ x | \max(C)   =  \min(C), x > \max(C), \max(C)   \neq  254 \} \\
@@ -258,10 +265,10 @@ x - \max(C) - 1,& \text{if } x \in S_5  \\
 {\rm skip},     & \text{otherwise}
 \end{array}\right.,
 \end{equation}
-where prediction-error $p$ is located in the interval of $[0, \infty)$. By the extended PPVO predictor, with the situation of $\max(C) = \min(C)$, pixel $x$ satisfying $x > \max(C)$ is utilized to obtain prediction-errors. More pixels participate in prediction procedure, leading to an increase in embedding capacity.
+where prediction-error $p$ is located in the interval of $[0, \infty)$. By the extended PPVO predictor, with the situation of $\max(C) = \min(C)$, pixel $x$ satisfying $x > \max(C)$ is utilized to obtain prediction-errors as well. More pixels participating in prediction procedure leads to an increase in embedding capacity.
 
 % embedding procedure
-Then, with the obtained prediction-error by (\ref{eq:EPPVOPE}), secret data $b \in \{0, 1\}$ can be embedded by modifying $p$ to derive $\hat{p}$ by (\ref{eq:PPVOMPE}). Meanwhile, the marked pixel $\hat{x}$ can be modified by
+Then, as shown in Fig. \ref{Fig.ComparisonEPPVO}, bin $0$ of every PEH corresponds to the highest frequency. Considering the tradeoff between capacity and distortion, errors with the value of $0$ are utilized for data embedding. Thus, with the obtained prediction-error by (\ref{eq:EPPVOPE}), one bit data $b \in \{0, 1\}$ can be embedded by modifying $p$ to derive $\hat{p}$ by (\ref{eq:PPVOMPE}). Meanwhile, the marked pixel $\hat{x}$ can be modified by
 \begin{equation}\label{eq:Embed}
 \hat{x} = \left\{\begin{array}{ll}
 \max(C) + \hat{p},    & \text{if } x \in S_1\\
@@ -271,17 +278,19 @@ Then, with the obtained prediction-error by (\ref{eq:EPPVOPE}), secret data $b \
 {\rm skip},     & \text{otherwise}
 \end{array}\right..
 \end{equation}
-% for reversibility(extraction procedure shown here?)
-In the above embedding procedure, prediction-error $p$ increased by $1$ or remain the same, i.e., $\hat{p} \geq p$. Thus, for original pixel value of $x \in S_1 \cup S_4 \cup S_5$, the marked pixel value $\hat{x}$ is up to $1$ larger than $x$. The both pixel values before and after modification belong to the same collection so that the reversibility is guaranteed for the decoder. In addition, it is note that
+
+In the above embedding procedure, every prediction-error $p$ increases by $1$ or remains unchanged, i.e., $\hat{p} \geq p$. 
+Thus, the marked pixel value $\hat{x}$ is $1$ larger than $x$ for original pixel value of $x \in S_1 \cup S_4 \cup S_5$ and $1$ smaller than $x$ for $x \in S_2 \cup S_3$.
+The pixel values after modification belong to the same collection as original pixels so that the reversibility is guaranteed for the decoder.
 
 % show the example of histogram, comparatione and reasons.
-For extended PPVO predictor, more surrounding pixels are fully considered as pixel context to predict current pixel, aiming to get sharper histogram. To show the superiority of extended PPVO predictor, compared with Qu \emph{et al.}' method, an comparison shown in Fig. \ref{Fig.ComparisonEPPVO}. In the example, eight standard gray-scale $512 \times 512$ sized images  are used and comparison of normalized PEHs of proposed extended PPVO predictor and PPVO predictor are displayed on the same figures.
-For extended PPVO predictor, pixels $\{c_{1}, c_{2}, c_{3}, c_{4}, c_{5}, c_{6}, c_{9}, c_{10}\}$ in Fig. \ref{Fig.Context}(b) are seen as context pixels, and for PPVO predictor, pixels $\{c_{1}, ..., c_{8}\}$ in Fig. \ref{Fig.Context}(a) are seen as context pixels.
-Obviously, both PEHs have high value at small prediction-errors and as the larger the error, the fewer the number of corresponding pixels. It is note that normalized PEHs of extended PPVO predictor have higher peaks at $0$, and the distributions are sharper, which is beneficial to the final embedding performance. Moreover, in the next data embedding procedure, pixels of $p = 0$ are used to embed secret data by expanding and others are shifted to ensure reversibility. Thus, we use embedding distortion of one bit data embedding to evaluate the distortion caused by histograms theoretically, numerically expressed as
+%For extended PPVO predictor, more surrounding pixels are fully considered as pixel context to predict current pixel, aiming to get sharper histogram. 
+To show the superiority of extended PPVO predictor, an example is shown in Fig. \ref{Fig.ComparisonEPPVO}. In the example, comparison of normalized PEHs of extended PPVO predictor and original PPVO predictor are displayed on eight standard gray-scale $512 \times 512$ sized images. For extended PPVO predictor, eight pixels $\{c_{1}, c_{2}, c_{3}, c_{4}, c_{5}, c_{6}, c_{9}, c_{10}\}$ in Fig. \ref{Fig.Context}(b) are considered as context pixels. For a reasonable comparison, for the original PPVO predictor, eight pixels $\{c_{1}, ..., c_{8}\}$ in Fig. \ref{Fig.Context}(a) are considered as context pixels.
+Obviously, normalized PEHs of extended PPVO predictor have highest peak at $0$, and the distributions are sharper, which is beneficial to the final embedding performance. Moreover, we use the embedding distortion caused by one bit data embedding to evaluate characteristic of the histogram theoretically, numerically expressed as
 \begin{equation*}\label{eq:EvaluateHistogram}
 {\rm \mathbf{Eval}} = \frac{{\rm H}(0)}{\frac{1}{2}{\rm H}(0)+ \sum_{i \geq 1}{\rm H}(i)},
 \end{equation*}
-where ${\rm H}$ is the PEH and ${\rm H}(i)$ is the frequency of pixels whose prediction-errors $p = i$. This evaluation describes the distortion caused by embedding one bit data on ${\rm H}$. In Lena, Baboon and Airplane, ${\rm \mathbf{Eval}}$ of extended PPVO predictor are 2.07, 6.88 and 1.44 respectively, while value of evaluation are 2.81, 7.90 and 1.76 of PPVO predictor. It shows that data embedding on PEH of extended PPVO predictor may carry much less distortion so that better performance can be obtained.
+where ${\rm H}$ is the PEH and ${\rm H}(i)$ is the frequency of pixels whose prediction-errors $p = i$. This evaluation describes the distortion caused by embedding one bit data on ${\rm H}$. The smaller the ${\rm \mathbf{Eval}}$, the better the characteristics of the PEH, which can bring less distortion. In Lena, Baboon and Airplane, ${\rm \mathbf{Eval}}$ of extended PPVO predictor are 2.07, 6.88 and 1.44 respectively, while value of evaluation are 2.81, 7.90 and 1.76 of PPVO predictor. This indicates that data embedding on PEH of extended PPVO predictor may carry much less distortion to obtain the better performance.
 \begin{figure*}
 \centering
 \subfigure[Lena]{
@@ -341,7 +350,19 @@ where ${\rm H}$ is the PEH and ${\rm H}(i)$ is the frequency of pixels whose pre
 
 
 \subsection{Multi-size based Embedding Method for MHM}\label{sec:3.2}
-Actually, in above embedding procedure, ${\rm CN}$ of pixel value $x$ to be predicted is set in advance. For a cover image, all the pixels are predicted by the same context pixels. In the proposed method, considering the complexity, we consider ${\rm CN} \leq24$ and to simplify the presentation, as shown in Fig. \ref{Fig.Context}(b), context pixels are group into four sets by the size of the context region, including $C_1 = \{c_1, ..., c_4\}$, $C_2 = \{c_1, ..., c_{10}\}$, $C_3 = \{c_1, ..., c_{18}\}$ and $C_4 = \{c_1, ..., c_{24}\}$. It is expected that the distortion is different by using different size context areas for prediction. In Fig. \ref{Fig.Eval}, we use ${\rm \mathbf{Eval}}$ to evaluate the data embedding, and X-axis represents the embedding capacity. It is prefer that ${\rm \mathbf{Eval}}$ is as small as possible. In Fig. \ref{Fig.Eval}(a), the curves show that for the small capacity, distortion by using context pixels with $C_2$ is lowest but there is a small maximum embedding capacity less than 20,000 bits. And for the large capacity, distortion by using context pixels with $C_1$ gets the smallest value and it has a large maximum embedding capacity larger than 36,000 bits. In this example, we focus on the two curves of $C_1$ and $C_2$. Next, we propose a such scheme called a multi-size based embedding method for MHM, which combines the advantages of both size context, with low distortion and large maximum capacity. .
+in above embedding procedure, ${\rm CN}$ of $x$ to be predicted is already set in advance. And for a cover image, every pixel is predicted by the same region of context pixels. Actually, the performance results caused by different context pixels are different. In order to explore the impact of ${\rm CN}$, we consider ${\rm CN} \leq 24$ and, to simplify the presentations, context pixels are group into four sets according to size of the region around the current pixel $x$, including $C_1 = \{c_1, ..., c_4\}$, $C_2 = \{c_1, ..., c_{10}\}$, $C_3 = \{c_1, ..., c_{18}\}$ and $C_4 = \{c_1, ..., c_{24}\}$, as shown in Fig. \ref{Fig.Context}(b). It is expected that the distortions are different by using different size context regions for prediction as shown in Fig. \ref{Fig.Eval}(a). In addition, Based on the consideration of the complexity of traditional RDH embedding, the comparison of threshold-capacity curves and threshold-${\rm \mathbf{Eval}}$ curves are shown in Fig. \ref{Fig.Eval}(b) and Fig. \ref{Fig.Eval}(c) as well. Here a threshold $T$ is set to choose
+the smooth pixels whose complexity ${\rm NL} < T$ to generate PEH so that all secret data can just be embedded. And the complexity of one pixel is evaluated by the sum of the absolution differences of the horizontal and vertical of every two adjacent pixels belong to the corresponding context.
+
+In Fig. \ref{Fig.Eval}, we focus on the two curves of $C_1$ and $C_2$. According to the curves, there are a few observations as follows. 
+\begin{enumerate}
+  \item In Fig. \ref{Fig.Eval}(b), the maximum embedding capacity of $C_1$ is much larger than $C_2$. This is because almost pixels in the cover image with small ${\rm CN}$ is used to be predicted while part of the pixels are skipped with larger size $C_2$.
+  \item In Fig. \ref{Fig.Eval}(b), capacity increases very fast when the threshold $T$ increases from a small value, especially curve of $C_1$. This indicates that pixels at smooth region are more suitable to be predicted.
+  \item In Fig. \ref{Fig.Eval}(c), With the same threshold $T$, although the capacity of $C_2$ is smaller than $C_1$, ${\rm \mathbf{Eval}}$ of $C_2$ is much smaller than $C_1$. This observation illustrates that among the skipped pixels of $C_2$, the proportion of pixels that are predicted to be inaccurate is increase, which is no benefit to the performance.
+\end{enumerate}
+Through the above description, it shows that prediction with context pixels in smaller size achieves a large embedding capacity, but distortion is also increased due to the pixels to be predicted inaccurately. And for the pixels in larger size, lots of inaccurately predicted pixels are skipped and distortion is much less than the smaller size. But the embedding capacity is limited. Based on these consideration, we propose a scheme called a multi-size based embedding method for MHM, which combines the advantages of both size context to further improve embedding performance.
+
+
+%In Fig. \ref{Fig.Eval}, we show the comparison of ${\rm \mathbf{Eval}}$-capacity curves with different size of context regions on Lena. It is prefer that ${\rm \mathbf{Eval}}$ is as small as possible. In Fig. \ref{Fig.Eval}(a), the curves show that for the small capacity, distortion by using context pixels with $C_2$ is lowest but there is a small maximum embedding capacity less than 20,000 bits. And for the large capacity, distortion by using context pixels with $C_1$ gets the smallest value and it has a large maximum embedding capacity larger than 36,000 bits. In this example, we focus on the two curves of $C_1$ and $C_2$. Next, we propose a such scheme called a multi-size based embedding method for MHM, which combines the advantages of both size context, with low distortion and large maximum capacity. .
 
 Firstly, to embed data into the cover image, it is prefer to select pixels in smooth context region for PEH generation. And the complexity ${\rm NL}$ of one pixel is evaluated by the sum of the absolution differences of the horizontal and vertical of every two adjacent pixels belong to the corresponding context. In Fig. \ref{Fig.Eval}, for each pixel, $24$ context pixels of $C_4$ are used to compute ${\rm NL}$ for all curves.
 A threshold $T$ is set to choose the smooth pixels whose complexity less than the threshold to generate PEH so that all secret data can just be embedded. Some thresholds are marked on the curves of $C_1$ and $C_2$. It shows that larger size context has a bigger threshold for a given capacity. This is because the large size context must skip much more pixels, and bigger threshold provides more available pixels for prediction. It is shown in Fig. \ref{Fig.Eval}(b) as well.
@@ -349,16 +370,21 @@ Specifically, let $X_{T} = \{x |\ {\rm NL}(x) < T\}$ indicates the set of pixels
 \begin{figure*}
 \centering
 \subfigure[Lena]{
-    \begin{minipage}[t]{0.45\linewidth}
+    \begin{minipage}[t]{0.3\linewidth}
     \centering
     \includegraphics[width=1\textwidth]{figures/EvalLena.pdf}
     \end{minipage}
 }
-\qquad
 \subfigure[Lena]{
-    \begin{minipage}[t]{0.465\linewidth}
+    \begin{minipage}[t]{0.31\linewidth}
     \centering
     \includegraphics[width=1\textwidth]{figures/CapLena.pdf}
+    \end{minipage}
+}
+\subfigure[Lena]{
+    \begin{minipage}[t]{0.31\linewidth}
+    \centering
+    \includegraphics[width=1\textwidth]{figures/thEvalLena.pdf}
     \end{minipage}
 }
 \centering
@@ -570,16 +596,16 @@ Firstly, we consider the impact of number of context sizes $N$ to the embedding 
 \hline
 {Images}                & Qu \emph{et al.}   & Peng \emph{et al.}    & Ou \emph{et al.}  & Proposed\\
 \hline
-Lena                    & 60.23              & 60.49                 & 60.59             & \textbf{61.19}\\ % 0.01
-Baboon                  & 53.76              & 53.58                 & 54.48             & \textbf{54.29}\\ % 0.01
-Airplane                & 63.79              & 62.97                 & 63.29             & \textbf{64.11}\\ % 0.01
-Barbara                 & 60.02              & 60.48                 & 60.59             & \textbf{60.60}\\ % 0.01
-Lake                    & 59.89              & 58.81                 & 59.36             & \textbf{60.47}\\ % 0.03
-Boat                    & 58.34              & 58.26                 & 58.23             & \textbf{58.69}\\ % 0.01
-Peppers                 & 58.75              & 58.97                 & 59.18             & \textbf{59.37}\\ % 0.01
-Elaine                  & 58.24              & 57.37                 & 57.37             & \textbf{59.61}\\ % 0.02
+Lena                    & 60.36              & 60.49                 & 60.59             & \textbf{61.19}\\ % 0.01
+Baboon                  & 54.11              & 53.58                 & 54.48             & \textbf{54.29}\\ % 0.01
+Airplane                & 63.76              & 62.97                 & 63.29             & \textbf{64.11}\\ % 0.01
+Barbara                 & 60.08              & 60.48                 & 60.59             & \textbf{60.60}\\ % 0.01
+Lake                    & 59.81              & 58.81                 & 59.36             & \textbf{60.47}\\ % 0.03
+Boat                    & 58.37              & 58.26                 & 58.23             & \textbf{58.69}\\ % 0.01
+Peppers                 & 58.73              & 58.97                 & 59.18             & \textbf{59.37}\\ % 0.01
+Elaine                  & 58.30              & 57.37                 & 57.37             & \textbf{59.61}\\ % 0.02
 \hline
-Average                 & 59.13              & 58.86                 & 59.13             & \textbf{59.79}\\
+Average                 & 59.19              & 58.86                 & 59.13             & \textbf{59.79}\\
 \hline
 \end{tabular}
 }
@@ -594,15 +620,15 @@ Average                 & 59.13              & 58.86                 & 59.13    
 \hline
 {Images}                & Qu \emph{et al.}   & Peng \emph{et al.}    & Ou \emph{et al.}  & Proposed\\
 \hline
-Lena                    & 56.61              & 56.56                 & 56.58             & \textbf{57.24}\\ % 0.01
-Airplane                & 59.99              & 59.07                 & 59.33             & \textbf{60.39}\\ % 0.01
-Barbara                 & 56.26              & 56.20                 & 56.50             & \textbf{56.74}\\ % 0.01
-Lake                    & 54.74              & 53.53                 & 54.29             & \textbf{55.32}\\ % 0.03
-Boat                    & 54.14              & 53.83                 & 53.76             & \textbf{54.24}\\ % 0.01
-Peppers                 & 55.02              & 54.77                 & 54.93             & \textbf{55.37}\\ % 0.01
+Lena                    & 56.65              & 56.56                 & 56.58             & \textbf{57.24}\\ % 0.01
+Airplane                & 60.01              & 59.07                 & 59.33             & \textbf{60.39}\\ % 0.01
+Barbara                 & 56.28              & 56.20                 & 56.50             & \textbf{56.74}\\ % 0.01
+Lake                    & 54.71              & 53.53                 & 54.29             & \textbf{55.32}\\ % 0.03
+Boat                    & 54.19              & 53.83                 & 53.76             & \textbf{54.24}\\ % 0.01
+Peppers                 & 55.05              & 54.77                 & 54.93             & \textbf{55.37}\\ % 0.01
 Elaine                  & 53.55              & 52.65                 & 52.71             & \textbf{54.30}\\ % 0.02
 \hline
-Average                 & 55.76              & 55.23                 & 55.44             & \textbf{56.23}\\
+Average                 & 55.78              & 55.23                 & 55.44             & \textbf{56.23}\\
 \hline
 \end{tabular}
 }

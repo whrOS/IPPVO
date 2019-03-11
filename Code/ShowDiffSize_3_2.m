@@ -489,7 +489,7 @@ for tt = 1:1:8
     end
     res4 = res4(:, 1:cnt);
     
-    %%
+    %% C12-C21
     cnt = 0;
     R12 = zeros(4,numel(5000 : 500 : max(res1(1,:))));
     for Payload = 5000 : 500 : max(res1(1,:))
@@ -563,7 +563,7 @@ for tt = 1:1:8
         R21(:, cnt) = [EC, Ratio, t1, t2];
     end
     res21 = R21;
-    %%
+    %% Capacity-Eval
     MarkerSize = 3.5;
     LineWidth  = 1.7;
     LinsStyle  = ':o';
@@ -623,7 +623,7 @@ for tt = 1:1:8
     axis normal;
     set(gca,'FontSize',14);
     title(Iname);
-    %%
+    %% Threshold-Capacity
     res1 = [C1(C1>5000); R1(C1>5000); TT(C1>5000)];
     res2 = [C2(C2>5000); R2(C2>5000); TT(C2>5000)];
     res3 = [C3(C3>5000); R3(C3>5000); TT(C3>5000)];
@@ -663,7 +663,43 @@ for tt = 1:1:8
     axis normal;
     set(gca,'FontSize',14);
     title(Iname);
-    %%
+    %% Threshold-Eval
+    MarkerSize = 3.5;
+    LineWidth  = 1.7;
+    LinsStyle  = ':o';
+    
+    h=figure('Name', Iname, 'pos', [10, 10, 500, 300]);
+    plot(res1(3, :), res1(2, :), [LinsStyle,'b'], ...
+        'MarkerFaceColor', 'b', ...
+        'MarkerSize', MarkerSize, ...
+        'DisplayName', '{\itC}_{1}', ...
+        'LineWidth', LineWidth);
+    
+    hold on;
+    plot(res2(3, :), res2(2, :), [LinsStyle, 'r'], ...
+        'MarkerFaceColor', 'r', ...
+        'MarkerSize', MarkerSize, ...
+        'DisplayName', '{\itC}_{2}', ...
+        'LineWidth', LineWidth);
+    
+    xs = min([res1(3, :) res2(3, :) res3(3, :) res4(3, :) res12(3, :)]);
+    xe = 1000;
+    ys = min([res1(2, :) res2(2, :) res3(2, :) res4(2, :) res12(2, :)]);
+    ye = max([res1(2, :) res2(2, :) res3(2, :) res4(2, :) res12(2, :)]);
+    lg = legend('show');
+    set(lg, 'FontSize', 14);
+    xlabel('Threshold');
+    ylabel('Eval');
+    axis([xs, xe, ys, ye]);
+    grid on;
+    set(gca, 'GridLineStyle' ,':');
+    set(gca, 'GridAlpha', 1);
+    set(gca, 'box', 'on');
+    set(gcf,'unit','normalized','position',[0.1,0.1,0.4,0.48]);
+    axis normal;
+    set(gca,'FontSize',14);
+    title(Iname);
+    %% T1-T2
 %     res1 = [C1(C1>5000); R1(C1>5000); TT(C1>5000)];
     MarkerSize = 3.7;
     LineWidth  = 1.1;

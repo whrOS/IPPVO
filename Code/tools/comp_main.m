@@ -75,7 +75,7 @@ function comp_main(name, mtds, EC)
     set(gca,'FontSize',14);
 %     saveas(h,[name '.eps'],'psc2');
     set(gcf, 'PaperSize', [16.5 12.5]);
-%     saveas(h,[name '.pdf'],'pdf');
-    saveas(h,[name '.jpg'],'jpg');
+    saveas(h,[name '.pdf'],'pdf');
+%     saveas(h,[name '.jpg'],'jpg');
     hold off;
 end

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2018.11.16)  24 JAN 2019 11:21
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2018.11.16)  11 MAR 2019 22:36
 entering extended mode
 **sigpro.tex
 (D:\GitHub\IPPVO\SGPRO\sigpro.tex
@@ -345,44 +345,44 @@ File: umsb.fd 2009/06/22 v3.00 AMS symbols B
 ) [1
 
 {C:/CTEX/UserData/pdftex/config/pdftex.map{Unicode.sfd}{UGBK.sfd}}]
-<figures/PVO_Lena_3x3_hist.pdf, id=19, 372.45488pt x 296.01892pt>
+<figures/PVO_Lena_3x3_hist.pdf, id=15, 372.45488pt x 296.01892pt>
 File: figures/PVO_Lena_3x3_hist.pdf Graphic file (type pdf)
 
 <use figures/PVO_Lena_3x3_hist.pdf>
-Package pdftex.def Info: figures/PVO_Lena_3x3_hist.pdf used on input line 82.
+Package pdftex.def Info: figures/PVO_Lena_3x3_hist.pdf used on input line 89.
 (pdftex.def)             Requested size: 149.76343pt x 119.0288pt.
 
-<figures/IPVO_Lena_3x3_hist.pdf, id=20, 377.42476pt x 296.01892pt>
+<figures/IPVO_Lena_3x3_hist.pdf, id=16, 377.42476pt x 296.01892pt>
 File: figures/IPVO_Lena_3x3_hist.pdf Graphic file (type pdf)
 
 <use figures/IPVO_Lena_3x3_hist.pdf>
-Package pdftex.def Info: figures/IPVO_Lena_3x3_hist.pdf used on input line 89.
+Package pdftex.def Info: figures/IPVO_Lena_3x3_hist.pdf used on input line 96.
 (pdftex.def)             Requested size: 154.44086pt x 121.12914pt.
- [2 <D:/GitHub/IPPVO/SGPRO/figures/PVO_Lena_3x3_hist.pdf> <D:/GitHub/IPPVO/SGPR
-O/figures/IPVO_Lena_3x3_hist.pdf>]
+ [2] [3 <D:/GitHub/IPPVO/SGPRO/figures/PVO_Lena_3x3_hist.pdf> <D:/GitHub/IPPVO/
+SGPRO/figures/IPVO_Lena_3x3_hist.pdf>]
 
 pdfTeX warning: pdflatex.exe (file D:/GitHub/IPPVO/SGPRO/figures/PPVOContext.pd
 f): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<figures/PPVOContext.pdf, id=35, 232.92119pt x 249.85646pt>
+<figures/PPVOContext.pdf, id=38, 232.92119pt x 249.85646pt>
 File: figures/PPVOContext.pdf Graphic file (type pdf)
 
 <use figures/PPVOContext.pdf>
-Package pdftex.def Info: figures/PPVOContext.pdf used on input line 145.
+Package pdftex.def Info: figures/PPVOContext.pdf used on input line 152.
 (pdftex.def)             Requested size: 102.96057pt x 110.44804pt.
 
-<figures/PPVO_Lena_CN15_hist.pdf, id=36, 366.76424pt x 307.40045pt>
+<figures/PPVO_Lena_CN15_hist.pdf, id=39, 366.76424pt x 307.40045pt>
 File: figures/PPVO_Lena_CN15_hist.pdf Graphic file (type pdf)
 
 <use figures/PPVO_Lena_CN15_hist.pdf>
-Package pdftex.def Info: figures/PPVO_Lena_CN15_hist.pdf used on input line 152
+Package pdftex.def Info: figures/PPVO_Lena_CN15_hist.pdf used on input line 159
 .
 (pdftex.def)             Requested size: 145.07886pt x 121.59773pt.
- [3 <D:/GitHub/IPPVO/SGPRO/figures/PPVOContext.pdf> <D:/GitHub/IPPVO/SGPRO/figu
-res/PPVO_Lena_CN15_hist.pdf>] [4]
+ [4 <D:/GitHub/IPPVO/SGPRO/figures/PPVOContext.pdf> <D:/GitHub/IPPVO/SGPRO/figu
+res/PPVO_Lena_CN15_hist.pdf>]
 File: figures/PPVOContext.pdf Graphic file (type pdf)
 
 <use figures/PPVOContext.pdf>
-Package pdftex.def Info: figures/PPVOContext.pdf used on input line 232.
+Package pdftex.def Info: figures/PPVOContext.pdf used on input line 239.
 (pdftex.def)             Requested size: 98.28314pt x 105.4308pt.
 
 
@@ -393,92 +393,68 @@ llowed
 File: figures/ExtendedPPVOContext.pdf Graphic file (type pdf)
 
 <use figures/ExtendedPPVOContext.pdf>
-Package pdftex.def Info: figures/ExtendedPPVOContext.pdf used on input line 239
+Package pdftex.def Info: figures/ExtendedPPVOContext.pdf used on input line 246
 .
 (pdftex.def)             Requested size: 173.15771pt x 110.39655pt.
- [5 <D:/GitHub/IPPVO/SGPRO/figures/ExtendedPPVOContext.pdf>]
-<figures/Comparison/lena.pdf, id=70, 355.38371pt x 310.24608pt>
+ [5] [6 <D:/GitHub/IPPVO/SGPRO/figures/ExtendedPPVOContext.pdf>]
+<figures/Comparison/lena.pdf, id=73, 355.38371pt x 310.24608pt>
 File: figures/Comparison/lena.pdf Graphic file (type pdf)
 
 <use figures/Comparison/lena.pdf>
-Package pdftex.def Info: figures/Comparison/lena.pdf used on input line 292.
+Package pdftex.def Info: figures/Comparison/lena.pdf used on input line 301.
 (pdftex.def)             Requested size: 105.30286pt x 91.92418pt.
 
-<figures/Comparison/baboon.pdf, id=71, 355.38371pt x 310.24608pt>
+<figures/Comparison/baboon.pdf, id=74, 355.38371pt x 310.24608pt>
 File: figures/Comparison/baboon.pdf Graphic file (type pdf)
 
 <use figures/Comparison/baboon.pdf>
-Package pdftex.def Info: figures/Comparison/baboon.pdf used on input line 298.
+Package pdftex.def Info: figures/Comparison/baboon.pdf used on input line 307.
 (pdftex.def)             Requested size: 105.30286pt x 91.92418pt.
 
-<figures/Comparison/airplane.pdf, id=72, 349.69243pt x 310.24608pt>
+<figures/Comparison/airplane.pdf, id=75, 349.69243pt x 310.24608pt>
 File: figures/Comparison/airplane.pdf Graphic file (type pdf)
 
 <use figures/Comparison/airplane.pdf>
-Package pdftex.def Info: figures/Comparison/airplane.pdf used on input line 304
+Package pdftex.def Info: figures/Comparison/airplane.pdf used on input line 313
 .
 (pdftex.def)             Requested size: 105.30286pt x 93.42485pt.
 
-<figures/Comparison/barbara.pdf, id=73, 349.69243pt x 310.24608pt>
+<figures/Comparison/barbara.pdf, id=76, 349.69243pt x 310.24608pt>
 File: figures/Comparison/barbara.pdf Graphic file (type pdf)
 
 <use figures/Comparison/barbara.pdf>
-Package pdftex.def Info: figures/Comparison/barbara.pdf used on input line 310.
+Package pdftex.def Info: figures/Comparison/barbara.pdf used on input line 319.
 
 (pdftex.def)             Requested size: 105.30286pt x 93.42485pt.
 
-<figures/Comparison/lake.pdf, id=74, 355.38371pt x 310.24608pt>
+<figures/Comparison/lake.pdf, id=77, 355.38371pt x 310.24608pt>
 File: figures/Comparison/lake.pdf Graphic file (type pdf)
 
 <use figures/Comparison/lake.pdf>
-Package pdftex.def Info: figures/Comparison/lake.pdf used on input line 318.
+Package pdftex.def Info: figures/Comparison/lake.pdf used on input line 327.
 (pdftex.def)             Requested size: 105.30286pt x 91.92418pt.
 
-<figures/Comparison/peppers.pdf, id=75, 355.38371pt x 310.24608pt>
+<figures/Comparison/peppers.pdf, id=78, 355.38371pt x 310.24608pt>
 File: figures/Comparison/peppers.pdf Graphic file (type pdf)
 
 <use figures/Comparison/peppers.pdf>
-Package pdftex.def Info: figures/Comparison/peppers.pdf used on input line 324.
+Package pdftex.def Info: figures/Comparison/peppers.pdf used on input line 333.
 
 (pdftex.def)             Requested size: 105.30286pt x 91.92418pt.
 
-<figures/Comparison/boat.pdf, id=76, 355.38371pt x 310.24608pt>
+<figures/Comparison/boat.pdf, id=79, 355.38371pt x 310.24608pt>
 File: figures/Comparison/boat.pdf Graphic file (type pdf)
 
 <use figures/Comparison/boat.pdf>
-Package pdftex.def Info: figures/Comparison/boat.pdf used on input line 330.
+Package pdftex.def Info: figures/Comparison/boat.pdf used on input line 339.
 (pdftex.def)             Requested size: 105.30286pt x 91.92418pt.
 
-<figures/Comparison/elaine.pdf, id=77, 355.38371pt x 310.24608pt>
+<figures/Comparison/elaine.pdf, id=80, 355.38371pt x 310.24608pt>
 File: figures/Comparison/elaine.pdf Graphic file (type pdf)
 
 <use figures/Comparison/elaine.pdf>
-Package pdftex.def Info: figures/Comparison/elaine.pdf used on input line 336.
+Package pdftex.def Info: figures/Comparison/elaine.pdf used on input line 345.
 (pdftex.def)             Requested size: 105.30286pt x 91.92418pt.
- [6]
-
-pdfTeX warning: pdflatex.exe (file D:/GitHub/IPPVO/SGPRO/figures/EvalLena.pdf):
- PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
-<figures/EvalLena.pdf, id=81, 494.80157pt x 381.37682pt>
-File: figures/EvalLena.pdf Graphic file (type pdf)
-
-<use figures/EvalLena.pdf>
-Package pdftex.def Info: figures/EvalLena.pdf used on input line 356.
-(pdftex.def)             Requested size: 210.59857pt x 162.31868pt.
-
-<figures/CapLena.pdf, id=82, 511.87335pt x 384.22244pt>
-File: figures/CapLena.pdf Graphic file (type pdf)
-
-<use figures/CapLena.pdf>
-Package pdftex.def Info: figures/CapLena.pdf used on input line 363.
-(pdftex.def)             Requested size: 217.61829pt x 163.34807pt.
-
-<figures/EmbedwithTh.pdf, id=83, 1157.45706pt x 595.80092pt>
-File: figures/EmbedwithTh.pdf Graphic file (type pdf)
-
-<use figures/EmbedwithTh.pdf>
-Package pdftex.def Info: figures/EmbedwithTh.pdf used on input line 373.
-(pdftex.def)             Requested size: 397.80286pt x 204.76968pt.
  [7 <D:/GitHub/IPPVO/SGPRO/figures/Comparison/lena.pdf> <D:/GitHub/IPPVO/SGPRO/
 figures/Comparison/baboon.pdf> <D:/GitHub/IPPVO/SGPRO/figures/Comparison/airpla
 ne.pdf> <D:/GitHub/IPPVO/SGPRO/figures/Comparison/barbara.pdf> <D:/GitHub/IPPVO
@@ -486,206 +462,234 @@ ne.pdf> <D:/GitHub/IPPVO/SGPRO/figures/Comparison/barbara.pdf> <D:/GitHub/IPPVO
 eppers.pdf> <D:/GitHub/IPPVO/SGPRO/figures/Comparison/boat.pdf> <D:/GitHub/IPPV
 O/SGPRO/figures/Comparison/elaine.pdf>]
 
+pdfTeX warning: pdflatex.exe (file D:/GitHub/IPPVO/SGPRO/figures/EvalLena.pdf):
+ PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
+<figures/EvalLena.pdf, id=110, 494.80157pt x 381.37682pt>
+File: figures/EvalLena.pdf Graphic file (type pdf)
+
+<use figures/EvalLena.pdf>
+Package pdftex.def Info: figures/EvalLena.pdf used on input line 379.
+(pdftex.def)             Requested size: 140.40143pt x 108.21632pt.
+
+<figures/CapLena.pdf, id=111, 511.87335pt x 384.22244pt>
+File: figures/CapLena.pdf Graphic file (type pdf)
+
+<use figures/CapLena.pdf>
+Package pdftex.def Info: figures/CapLena.pdf used on input line 385.
+(pdftex.def)             Requested size: 145.07886pt x 108.90067pt.
+
+<figures/thEvalLena.pdf, id=112, 509.02773pt x 384.22244pt>
+File: figures/thEvalLena.pdf Graphic file (type pdf)
+
+<use figures/thEvalLena.pdf>
+Package pdftex.def Info: figures/thEvalLena.pdf used on input line 391.
+(pdftex.def)             Requested size: 145.07886pt x 109.50453pt.
+ [8]
+<figures/EmbedwithTh.pdf, id=116, 1157.45706pt x 595.80092pt>
+File: figures/EmbedwithTh.pdf Graphic file (type pdf)
+
+<use figures/EmbedwithTh.pdf>
+Package pdftex.def Info: figures/EmbedwithTh.pdf used on input line 401.
+(pdftex.def)             Requested size: 397.80286pt x 204.76968pt.
+
+
 pdfTeX warning: pdflatex.exe (file D:/GitHub/IPPVO/SGPRO/figures/Thresholds.pdf
 ): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<figures/Thresholds.pdf, id=114, 517.31268pt x 380.87595pt>
+<figures/Thresholds.pdf, id=117, 517.31268pt x 380.87595pt>
 File: figures/Thresholds.pdf Graphic file (type pdf)
 
 <use figures/Thresholds.pdf>
-Package pdftex.def Info: figures/Thresholds.pdf used on input line 389.
+Package pdftex.def Info: figures/Thresholds.pdf used on input line 417.
 (pdftex.def)             Requested size: 234.0pt x 172.28758pt.
- [8 <D:/GitHub/IPPVO/SGPRO/figures/EvalLena.pdf> <D:/GitHub/IPPVO/SGPRO/figures
-/CapLena.pdf>] [9 <D:/GitHub/IPPVO/SGPRO/figures/EmbedwithTh.pdf, page is rotat
-ed 90 degrees> <D:/GitHub/IPPVO/SGPRO/figures/Thresholds.pdf>]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 398.
+ [9 <D:/GitHub/IPPVO/SGPRO/figures/EvalLena.pdf> <D:/GitHub/IPPVO/SGPRO/figures
+/CapLena.pdf> <D:/GitHub/IPPVO/SGPRO/figures/thEvalLena.pdf>]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 426.
 
  (C:\CTEX\MiKTeX\tex\latex\base\omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 398.
- [10]
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 426.
+ [10 <D:/GitHub/IPPVO/SGPRO/figures/EmbedwithTh.pdf, page is rotated 90 degrees
+>]
 <figures/Procedures.pdf, id=211, 617.53593pt x 278.78133pt>
 File: figures/Procedures.pdf Graphic file (type pdf)
 
 <use figures/Procedures.pdf>
-Package pdftex.def Info: figures/Procedures.pdf used on input line 430.
+Package pdftex.def Info: figures/Procedures.pdf used on input line 458.
 (pdftex.def)             Requested size: 397.80286pt x 179.58499pt.
-
-<figures/Result/size/Lena.pdf, id=212, 494.80087pt x 381.37682pt>
+ [11 <D:/GitHub/IPPVO/SGPRO/figures/Thresholds.pdf>] <figures/Result/size/Lena.
+pdf, id=220, 494.80087pt x 381.37682pt>
 File: figures/Result/size/Lena.pdf Graphic file (type pdf)
 
 <use figures/Result/size/Lena.pdf>
-Package pdftex.def Info: figures/Result/size/Lena.pdf used on input line 451.
+Package pdftex.def Info: figures/Result/size/Lena.pdf used on input line 479.
 (pdftex.def)             Requested size: 182.51971pt x 140.67657pt.
 
-<figures/Result/size/Baboon.pdf, id=213, 511.87265pt x 384.22244pt>
+<figures/Result/size/Baboon.pdf, id=221, 511.87265pt x 384.22244pt>
 File: figures/Result/size/Baboon.pdf Graphic file (type pdf)
 
 <use figures/Result/size/Baboon.pdf>
-Package pdftex.def Info: figures/Result/size/Baboon.pdf used on input line 458.
+Package pdftex.def Info: figures/Result/size/Baboon.pdf used on input line 486.
 
 (pdftex.def)             Requested size: 187.19714pt x 140.51263pt.
 
-<figures/Result/size/Airplane.pdf, id=214, 494.80087pt x 380.5447pt>
+<figures/Result/size/Airplane.pdf, id=222, 494.80087pt x 380.5447pt>
 File: figures/Result/size/Airplane.pdf Graphic file (type pdf)
 
 <use figures/Result/size/Airplane.pdf>
-Package pdftex.def Info: figures/Result/size/Airplane.pdf used on input line 46
-5.
+Package pdftex.def Info: figures/Result/size/Airplane.pdf used on input line 49
+3.
 (pdftex.def)             Requested size: 182.51971pt x 140.36963pt.
 
-<figures/Result/size/Barbara.pdf, id=215, 494.80087pt x 381.37682pt>
+<figures/Result/size/Barbara.pdf, id=223, 494.80087pt x 381.37682pt>
 File: figures/Result/size/Barbara.pdf Graphic file (type pdf)
 
 <use figures/Result/size/Barbara.pdf>
-Package pdftex.def Info: figures/Result/size/Barbara.pdf used on input line 472
+Package pdftex.def Info: figures/Result/size/Barbara.pdf used on input line 500
 .
 (pdftex.def)             Requested size: 182.51971pt x 140.67657pt.
 
-<figures/Result/size/Lake.pdf, id=216, 494.80087pt x 381.37682pt>
+<figures/Result/size/Lake.pdf, id=224, 494.80087pt x 381.37682pt>
 File: figures/Result/size/Lake.pdf Graphic file (type pdf)
 
 <use figures/Result/size/Lake.pdf>
-Package pdftex.def Info: figures/Result/size/Lake.pdf used on input line 479.
+Package pdftex.def Info: figures/Result/size/Lake.pdf used on input line 507.
 (pdftex.def)             Requested size: 182.51971pt x 140.67657pt.
 
-<figures/Result/size/Boat.pdf, id=217, 494.80087pt x 381.37682pt>
+<figures/Result/size/Boat.pdf, id=225, 494.80087pt x 381.37682pt>
 File: figures/Result/size/Boat.pdf Graphic file (type pdf)
 
 <use figures/Result/size/Boat.pdf>
-Package pdftex.def Info: figures/Result/size/Boat.pdf used on input line 486.
+Package pdftex.def Info: figures/Result/size/Boat.pdf used on input line 514.
 (pdftex.def)             Requested size: 182.51971pt x 140.67657pt.
 
-<figures/Result/size/Peppers.pdf, id=218, 494.80087pt x 381.37682pt>
+<figures/Result/size/Peppers.pdf, id=226, 494.80087pt x 381.37682pt>
 File: figures/Result/size/Peppers.pdf Graphic file (type pdf)
 
 <use figures/Result/size/Peppers.pdf>
-Package pdftex.def Info: figures/Result/size/Peppers.pdf used on input line 493
+Package pdftex.def Info: figures/Result/size/Peppers.pdf used on input line 521
 .
 (pdftex.def)             Requested size: 182.51971pt x 140.67657pt.
 
-<figures/Result/size/Elaine.pdf, id=219, 494.80087pt x 381.37682pt>
+<figures/Result/size/Elaine.pdf, id=227, 494.80087pt x 381.37682pt>
 File: figures/Result/size/Elaine.pdf Graphic file (type pdf)
 
 <use figures/Result/size/Elaine.pdf>
-Package pdftex.def Info: figures/Result/size/Elaine.pdf used on input line 500.
+Package pdftex.def Info: figures/Result/size/Elaine.pdf used on input line 528.
 
 (pdftex.def)             Requested size: 182.51971pt x 140.67657pt.
 
-<figures/Result/capacity/Lena.pdf, id=220, 387.24162pt x 284.19606pt>
+<figures/Result/capacity/Lena.pdf, id=228, 384.3964pt x 281.35071pt>
 File: figures/Result/capacity/Lena.pdf Graphic file (type pdf)
 
 <use figures/Result/capacity/Lena.pdf>
-Package pdftex.def Info: figures/Result/capacity/Lena.pdf used on input line 51
-4.
-(pdftex.def)             Requested size: 194.21686pt x 142.53564pt.
+Package pdftex.def Info: figures/Result/capacity/Lena.pdf used on input line 54
+2.
+(pdftex.def)             Requested size: 194.21686pt x 142.15181pt.
 
-<figures/Result/capacity/Baboon.pdf, id=221, 401.46878pt x 284.19606pt>
+<figures/Result/capacity/Baboon.pdf, id=229, 398.62357pt x 281.3504pt>
 File: figures/Result/capacity/Baboon.pdf Graphic file (type pdf)
 
 <use figures/Result/capacity/Baboon.pdf>
 Package pdftex.def Info: figures/Result/capacity/Baboon.pdf used on input line 
-520.
-(pdftex.def)             Requested size: 201.23657pt x 142.4576pt.
+548.
+(pdftex.def)             Requested size: 201.23657pt x 142.03575pt.
 
-<figures/Result/capacity/Airplane.pdf, id=222, 387.24162pt x 284.19606pt>
+<figures/Result/capacity/Airplane.pdf, id=230, 384.3964pt x 281.35071pt>
 File: figures/Result/capacity/Airplane.pdf Graphic file (type pdf)
 
 <use figures/Result/capacity/Airplane.pdf>
 Package pdftex.def Info: figures/Result/capacity/Airplane.pdf used on input lin
-e 527.
-(pdftex.def)             Requested size: 194.21686pt x 142.53564pt.
+e 555.
+(pdftex.def)             Requested size: 194.21686pt x 142.15181pt.
 
-<figures/Result/capacity/Barbara.pdf, id=223, 384.397pt x 284.19606pt>
+<figures/Result/capacity/Barbara.pdf, id=231, 384.3964pt x 281.35071pt>
 File: figures/Result/capacity/Barbara.pdf Graphic file (type pdf)
 
 <use figures/Result/capacity/Barbara.pdf>
 Package pdftex.def Info: figures/Result/capacity/Barbara.pdf used on input line
- 533.
-(pdftex.def)             Requested size: 194.21686pt x 143.58942pt.
+ 561.
+(pdftex.def)             Requested size: 194.21686pt x 142.15181pt.
 
-<figures/Result/capacity/Lake.pdf, id=224, 387.24162pt x 284.19606pt>
+<figures/Result/capacity/Lake.pdf, id=232, 384.3964pt x 281.35071pt>
 File: figures/Result/capacity/Lake.pdf Graphic file (type pdf)
 
 <use figures/Result/capacity/Lake.pdf>
-Package pdftex.def Info: figures/Result/capacity/Lake.pdf used on input line 54
-0.
-(pdftex.def)             Requested size: 194.21686pt x 142.53564pt.
+Package pdftex.def Info: figures/Result/capacity/Lake.pdf used on input line 56
+8.
+(pdftex.def)             Requested size: 194.21686pt x 142.15181pt.
 
-<figures/Result/capacity/Boat.pdf, id=225, 392.93289pt x 284.19606pt>
+<figures/Result/capacity/Boat.pdf, id=233, 387.24202pt x 281.35071pt>
 File: figures/Result/capacity/Boat.pdf Graphic file (type pdf)
 
 <use figures/Result/capacity/Boat.pdf>
-Package pdftex.def Info: figures/Result/capacity/Boat.pdf used on input line 54
-6.
-(pdftex.def)             Requested size: 196.55914pt x 142.16705pt.
+Package pdftex.def Info: figures/Result/capacity/Boat.pdf used on input line 57
+4.
+(pdftex.def)             Requested size: 196.55914pt x 142.80865pt.
 
-<figures/Result/capacity/Peppers.pdf, id=226, 387.24162pt x 284.19606pt>
+<figures/Result/capacity/Peppers.pdf, id=234, 384.3964pt x 281.35071pt>
 File: figures/Result/capacity/Peppers.pdf Graphic file (type pdf)
 
 <use figures/Result/capacity/Peppers.pdf>
 Package pdftex.def Info: figures/Result/capacity/Peppers.pdf used on input line
- 553.
-(pdftex.def)             Requested size: 194.21686pt x 142.53564pt.
+ 581.
+(pdftex.def)             Requested size: 194.21686pt x 142.15181pt.
 
-<figures/Result/capacity/Elaine.pdf, id=227, 384.397pt x 284.19606pt>
+<figures/Result/capacity/Elaine.pdf, id=235, 384.3964pt x 281.35071pt>
 File: figures/Result/capacity/Elaine.pdf Graphic file (type pdf)
 
 <use figures/Result/capacity/Elaine.pdf>
 Package pdftex.def Info: figures/Result/capacity/Elaine.pdf used on input line 
-559.
-(pdftex.def)             Requested size: 194.21686pt x 143.58942pt.
+587.
+(pdftex.def)             Requested size: 194.21686pt x 142.15181pt.
 
 
-LaTeX Warning: Float too large for page by 4.57314pt on input line 563.
+LaTeX Warning: Float too large for page by 3.0378pt on input line 591.
 
-(D:\GitHub\IPPVO\SGPRO\sigpro.bbl [11 <D:/GitHub/IPPVO/SGPRO/figures/Procedures
-.pdf, page is rotated 90 degrees>] [12 <D:/GitHub/IPPVO/SGPRO/figures/Result/si
-ze/Lena.pdf> <D:/GitHub/IPPVO/SGPRO/figures/Result/size/Baboon.pdf> <D:/GitHub/
-IPPVO/SGPRO/figures/Result/size/Airplane.pdf> <D:/GitHub/IPPVO/SGPRO/figures/Re
-sult/size/Barbara.pdf> <D:/GitHub/IPPVO/SGPRO/figures/Result/size/Lake.pdf> <D:
-/GitHub/IPPVO/SGPRO/figures/Result/size/Boat.pdf> <D:/GitHub/IPPVO/SGPRO/figure
-s/Result/size/Peppers.pdf> <D:/GitHub/IPPVO/SGPRO/figures/Result/size/Elaine.pd
-f>] [13 <D:/GitHub/IPPVO/SGPRO/figures/Result/capacity/Lena.pdf> <D:/GitHub/IPP
-VO/SGPRO/figures/Result/capacity/Baboon.pdf> <D:/GitHub/IPPVO/SGPRO/figures/Res
-ult/capacity/Airplane.pdf> <D:/GitHub/IPPVO/SGPRO/figures/Result/capacity/Barba
-ra.pdf> <D:/GitHub/IPPVO/SGPRO/figures/Result/capacity/Lake.pdf> <D:/GitHub/IPP
-VO/SGPRO/figures/Result/capacity/Boat.pdf> <D:/GitHub/IPPVO/SGPRO/figures/Resul
-t/capacity/Peppers.pdf> <D:/GitHub/IPPVO/SGPRO/figures/Result/capacity/Elaine.p
-df>] [14]) [15] (D:\GitHub\IPPVO\SGPRO\sigpro.aux)
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
- ) 
+(D:\GitHub\IPPVO\SGPRO\sigpro.bbl) [12 <D:/GitHub/IPPVO/SGPRO/figures/Procedure
+s.pdf, page is rotated 90 degrees>] [13 <D:/GitHub/IPPVO/SGPRO/figures/Result/s
+ize/Lena.pdf> <D:/GitHub/IPPVO/SGPRO/figures/Result/size/Baboon.pdf> <D:/GitHub
+/IPPVO/SGPRO/figures/Result/size/Airplane.pdf> <D:/GitHub/IPPVO/SGPRO/figures/R
+esult/size/Barbara.pdf> <D:/GitHub/IPPVO/SGPRO/figures/Result/size/Lake.pdf> <D
+:/GitHub/IPPVO/SGPRO/figures/Result/size/Boat.pdf> <D:/GitHub/IPPVO/SGPRO/figur
+es/Result/size/Peppers.pdf> <D:/GitHub/IPPVO/SGPRO/figures/Result/size/Elaine.p
+df>] [14 <D:/GitHub/IPPVO/SGPRO/figures/Result/capacity/Lena.pdf> <D:/GitHub/IP
+PVO/SGPRO/figures/Result/capacity/Baboon.pdf> <D:/GitHub/IPPVO/SGPRO/figures/Re
+sult/capacity/Airplane.pdf> <D:/GitHub/IPPVO/SGPRO/figures/Result/capacity/Barb
+ara.pdf> <D:/GitHub/IPPVO/SGPRO/figures/Result/capacity/Lake.pdf> <D:/GitHub/IP
+PVO/SGPRO/figures/Result/capacity/Boat.pdf> <D:/GitHub/IPPVO/SGPRO/figures/Resu
+lt/capacity/Peppers.pdf> <D:/GitHub/IPPVO/SGPRO/figures/Result/capacity/Elaine.
+pdf>] [15] (D:\GitHub\IPPVO\SGPRO\sigpro.aux) ) 
 Here is how much of TeX's memory you used:
- 3894 strings out of 495354
- 52336 string characters out of 3183858
- 123989 words of memory out of 3000000
- 6941 multiletter control sequences out of 15000+200000
+ 3899 strings out of 495354
+ 52457 string characters out of 3183858
+ 122991 words of memory out of 3000000
+ 6945 multiletter control sequences out of 15000+200000
  12495 words of font info for 47 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
  42i,10n,35p,2109b,323s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/CTEX/MiKTeX/fon
-ts/type1/public/amsfonts/cm/cmex10.pfb><C:/CTEX/MiKTeX/fonts/type1/public/amsfo
-nts/cmextra/cmex7.pfb><C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb
-><C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/CTEX/MiKTeX/fonts
-/type1/public/amsfonts/cm/cmmi7.pfb><C:/CTEX/MiKTeX/fonts/type1/public/amsfonts
-/cm/cmmi8.pfb><C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/CTEX
-/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/CTEX/MiKTeX/fonts/type1/pu
-blic/amsfonts/cm/cmr5.pfb><C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.p
-fb><C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/CTEX/MiKTeX/font
-s/type1/public/amsfonts/cm/cmr8.pfb><C:/CTEX/MiKTeX/fonts/type1/public/amsfonts
-/cm/cmss10.pfb><C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/CT
-EX/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy5.pfb><C:/CTEX/MiKTeX/fonts/type1/
-public/amsfonts/cm/cmsy6.pfb><C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cms
-y7.pfb><C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/CTEX/MiKTeX
-/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/CTEX/MiKTeX/fonts/type1/public/a
-msfonts/cm/cmti7.pfb><C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmti8.pfb><
-C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt8.pfb>
-Output written on sigpro.pdf (15 pages, 771411 bytes).
+<C:/CTEX/MiKTeX/fonts/type1/publ
+ic/amsfonts/cm/cmbx10.pfb><C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10
+.pfb><C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cmextra/cmex7.pfb><C:/CTEX/MiK
+TeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/CTEX/MiKTeX/fonts/type1/publi
+c/amsfonts/cm/cmmi5.pfb><C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pf
+b><C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/CTEX/MiKTeX/font
+s/type1/public/amsfonts/cm/cmr10.pfb><C:/CTEX/MiKTeX/fonts/type1/public/amsfont
+s/cm/cmr12.pfb><C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/CTEX
+/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/CTEX/MiKTeX/fonts/type1/pub
+lic/amsfonts/cm/cmr7.pfb><C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pf
+b><C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmss10.pfb><C:/CTEX/MiKTeX/fon
+ts/type1/public/amsfonts/cm/cmsy10.pfb><C:/CTEX/MiKTeX/fonts/type1/public/amsfo
+nts/cm/cmsy5.pfb><C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/C
+TEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/CTEX/MiKTeX/fonts/type1
+/public/amsfonts/cm/cmsy8.pfb><C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cm
+ti10.pfb><C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmti7.pfb><C:/CTEX/MiKT
+eX/fonts/type1/public/amsfonts/cm/cmti8.pfb><C:/CTEX/MiKTeX/fonts/type1/public/
+amsfonts/cm/cmtt8.pfb>
+Output written on sigpro.pdf (15 pages, 845356 bytes).
 PDF statistics:
- 386 PDF objects out of 1000 (max. 8388607)
+ 391 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 171 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 176 words of extra memory for PDF output out of 10000 (max. 10000000)
 
