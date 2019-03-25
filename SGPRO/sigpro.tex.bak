@@ -32,7 +32,7 @@
 \address[mysecondaryaddress]{Beijing Key Laboratory of Advanced Information Science and Network Technology, Beijing 100044, China}
 
 \begin{abstract}
-Pixel-value-order(PVO) is a high-fidelity reversible data hiding (RDH) method which is commonly used today. Traditional PVO-based RDH methods first divide the cover image into blocks and data is embedded into prediction-errors of the largest/smallest pixels block-by-block. Later, the pixel-based PVO(PPVO) is proposed by the motivation of overcoming the block constraint. Each pixel is predicted by the neighbor sorted context pixels and the number of context pixels of each pixel to-be-predicted is constant. In this paper, a extended PPVO-based RDH method is proposed with a extended PPVO predictor and embedding procedure is implemented by a multi-size based embedding method. First, a extended PPVO predictor is proposed to further utilize the surrounding context information to obtain a sharper prediction-error histogram(PEH). Then, we explore the impact of the various sizes of context region. By considering the between local complexity, data is embedded into the prediction-error based on a suitable context region size. The experimental results shows that the proposed method achieve outstanding performances and is superior to several state-of-the-art PVO-based methods.
+Pixel-value-order(PVO) is a high-fidelity reversible data hiding (RDH) method which is commonly used today. Traditional PVO-based RDH methods first divide the cover image into blocks and data is embedded into prediction-error of the largest/smallest pixel in each block. Later, the pixel-based PVO(PPVO) is proposed by the motivation of overcoming the block constraint. Each pixel is predicted by the surrounding sorted context pixels and the number of context pixels of each to-be-predicted pixel is constant. In this paper, a improved PPVO-based RDH method is proposed with a extended PPVO predictor and the embedding procedure is implemented by a multi-size based embedding method for MHM. First, a extended PPVO predictor is proposed to further utilize the additional surrounding context information to obtain a sharper prediction-error histogram(PEH). Then, we explore the impact of the various sizes of context region. By considering the local complexity, data is embedded into the prediction-error based on a suitable context region size. The experimental results shows that the proposed method achieves an outstanding performance and is superior to several state-of-the-art PVO-based methods.
 \end{abstract}
 
 
@@ -45,7 +45,7 @@ Pixel-value-order(PVO) is a high-fidelity reversible data hiding (RDH) method wh
 %----------------------------------------------------------------------------------------
 \section{Introduction}\label{sec:1}
 % RDH PEH PVO MHM
-In recent days, the tampering and dissemination of multimedia data have been getting more and more convenient. In order to verify the integrity and security of information, technologies such as information encryption, fingerprint recognition and data hiding have been extensively studied. Among them, reversible data hiding(RDH) is a technology that embeds secret data into image in an imperceptible way and the decoder can recover the original content lossless from the marked image while extracting the secret data.
+In recent days, the tampering and propagation of multimedia data have been getting more and more convenient. In order to verify the integrity and security of information, technologies such as information encryption, fingerprint recognition and data hiding have been extensively studied. Among them, reversible data hiding(RDH) is a technology that embeds secret data into image in an imperceptible way and the decoder can recover the original content lossless from the marked image while extracting the secret data.
 
 Up to now, RDH has been extensively explored and many types of techniques such as difference expansion(DE) \cite{
 Tian2003DE,
@@ -71,7 +71,7 @@ Dragoi2014Local,
 Li2015Efficient,
 Dragoi2016Adaptive,
 Wang2017Rate} 
-have emerged. Among the techniques, the first DE-based method is proposed by Tian \emph{et al.} \cite{Tian2003DE} which expands the difference between adjacent pixels to achieve embedding procedure. By embedding data into the differences, the high fidelity is guaranteed. HS-based methods achieve embedding by shifting pixels according to the peak-gap distribution of image histogram. However, embedding capacity and distortion is mainly sensitive to characteristic of the histogram. Besides, unlike DE-based and HS-based methods, PEE is the most influential RDH technique due to its balance between distortion and capacity. PEE is first proposed by Thodi and Rodriguez in \cite{Thodi2007Expansion}. In this PEE-based method, pixels are first predicted by adjacent pixels and then accurately predicted pixels are modified by expanding the prediction-errors for embedding, while the others are shifted to ensure the reversibility. Focusing on the pixel prediction or modification of prediction-errors, many methods are proposed, e.g., accurate predictor design for prediction-error histogram(PEH) \cite{Thodi2007Expansion,Fallahpour2008Reversible,Hu2009DE,Hong2009Reversible,Sachnev2009Reversible,Ioan2014Local,Ioan2015On}, high-dimension histogram modification \cite{Ou2013Pairwise,Li2013A,Dragoi2016Adaptive} and multiple histogram modification(MHM) \cite{Li2015Efficient,Xiang2015A,Bo2016Improved}.
+have emerged. Among the techniques, the first DE-based method is proposed by Tian \emph{et al.} \cite{Tian2003DE} which expands the difference between adjacent pixels to achieve embedding procedure. By embedding data into the differences, the high fidelity is guaranteed. HS-based methods achieve embedding by shifting pixels according to the peak-gap distribution of image histogram. However, embedding capacity and distortion is mainly sensitive to characteristic of the histogram. Besides, unlike DE-based and HS-based methods, PEE is the most influential RDH technique due to its balance between distortion and capacity. PEE is first proposed by Thodi and Rodriguez in \cite{Thodi2007Expansion}. In this PEE-based method, pixels are first predicted by adjacent pixels and then accurately predicted pixels are modified by expanding the prediction-errors for embedding, while the others are shifted to ensure the reversibility. Focusing on the pixel prediction and modification of prediction-errors, many methods are proposed, e.g., accurate predictor design for prediction-error histogram(PEH) \cite{Thodi2007Expansion,Fallahpour2008Reversible,Hu2009DE,Hong2009Reversible,Sachnev2009Reversible,Ioan2014Local,Ioan2015On}, high-dimension histogram modification \cite{Ou2013Pairwise,Li2013A,Dragoi2016Adaptive} and multiple histograms modification(MHM) \cite{Li2015Efficient,Xiang2015A,Bo2016Improved}.
 
 Among the PEE-based methods, pixel-value-order(PVO) is the most critical technology which provides an accurate prediction method \cite{
 Li2013PVO,
@@ -79,13 +79,11 @@ Peng2014IPVO,
 Ou2014PVOk,
 Qu2015PPVO,
 Xiang2015A,
-Weng2016Reversible,
 Bo2016Improved,
+Weng2016Reversible,
 Weng2017Optimal,
-He2018Reversible,
-Su2018Reversible
-}. 
-The original PVO-based method is proposed by Li \emph{et al.}. For the data embedding, the cover image is first divided into equal size and non-overlapping blocks. Then, in each block, the pixels are sorted in an ascending order. And the largest/smallest pixel value is predicted by the second largest/smallest pixel value to derive the prediction-error. At last, for the generated PEH, a expansion/shift modification is carried out on each prediction-error for embedding. In the original PVO-based RDH, it is note that smooth blocks can not be used for embedding. Due to this reason, Peng \emph{et al.} propose an improved PVO method which considers the original order of the largest/smallest pixel value and the second the largest/smallest pixel value, resulting in the fully utilized of smooth blocks. Meanwhile, Ou \emph{et al.} propose the PVO-$k$ scheme which modifies the first several largest/smallest pixel values at the same time to overcome the same shortage. Furthermore, Qu \emph{et al.} notice that lots of pixels are omitted in embedding procedure because of the block constraint. Thus, they proposed a pixel-based PVO method. The target pixel is predicted by the the largest/smallest neighbor context pixels and it gets a high embedding capacity by the pixel-by-pixel strategy.
+He2018Reversible}. 
+The original PVO-based method \cite{Li2013PVO} is proposed by Li \emph{et al.}. For the data embedding, the cover image is first divided into equal size and non-overlapping blocks. Then, in each block, the pixels are sorted in an ascending order. Next, the largest/smallest pixel value is predicted by the second largest/smallest pixel value to derive the prediction-error. And at last, for the generated PEH, a expansion/shift modification is carried out on each prediction-error for embedding. In the original PVO-based RDH \cite{Li2013PVO} , it is note that smooth blocks are skipped and not used for embedding. Due to this discovery, Peng \emph{et al.} propose an improved PVO method \cite{Peng2014IPVO} which considers the original order of the largest/smallest pixel value and the second the largest/smallest pixel value, resulting in the fully utilizing of smooth blocks. Meanwhile, Ou \emph{et al.} propose the PVO-$k$ scheme which modifies the first several largest/smallest pixel values at the same time to overcome the same shortage. Furthermore, Qu \emph{et al.} notice that lots of pixels are omitted in embedding procedure because of the block constraint. Thus, they proposed a pixel-based PVO method. The target pixel is predicted by the the largest/smallest neighbor context pixels and it gets a high embedding capacity by the pixel-by-pixel strategy.
 In addition, from the same motivation, Wang \emph{et al.} divide the cover image into two size blocks due to the region complexities, and further exploit the correlation of pixels in smooth regions.
 
 In this paper, we try to improve the performance of PPVO RDH. First, we find that in the original PPVO RDH method, part of surrounding context pixels do not appreciate in the prediction process, which are also correlated with the pixel to-be-predicted. In this work, a extended PPVO predictor is proposed which utilizes pixels in left lower direction of target pixel for prediction as well. And it carries out an accurate prediction process to derive a sharper PEH. Meanwhile, the impact of various size of context region is explored. The context region size is chosen by the local complexity of the target pixel. Pixels in smooth area are predicted with a small context region size and pixels in complex area are predicted with a larger size. The experimental results verify that the proposed method is superior to the several state-of-the-art PVO-based methods.
@@ -180,15 +178,15 @@ In the classical PVO-based RDH method such as the original PVO-base method \cite
 PPVO achieves an pixel-by-pixel data embedding process. For current pixel, the context pixels defined as the pixels in the lower right direction and form an vector $C=\{c_1,...,c_{\rm CN}\}$ shown in Fig. \ref{Fig.PPVOCNandHist}(a), where the number of context pixels is defined as ${\rm CN}$.
 \begin{figure*}
 \centering
-\subfigure[Context pixels of $x$.]{
-    \begin{minipage}[t]{0.22\linewidth}
+\subfigure[Context pixels of $x$ by PPVO.]{
+    \begin{minipage}[t]{0.4\linewidth}
     \centering
     \includegraphics[width=1\textwidth]{figures/PPVOContext.pdf}
     \end{minipage}
 }
-\qquad\qquad\qquad
+\quad
 \subfigure[PEH of $p$ by \eqref{eq:PPVOPE}.]{
-    \begin{minipage}[t]{0.31\linewidth}
+    \begin{minipage}[t]{0.42\linewidth}
     \centering
     \includegraphics[width=1\textwidth]{figures/PPVO_Lena_CN15_hist.pdf}
     \end{minipage}
@@ -264,24 +262,24 @@ The experimental results show that PPVO gets a large maximum embedding capacity 
 In this section, a extended PPVO predictor is first introduced. Then, a multi-size based embedding method for MHM is proposed to further improve the performance. Finally, the embedding procedure and extraction procedure is described.
 
 \subsection{Extended PPVO predictor}\label{sec:3.1}
-Compared with PVO-based methods such as PVO\cite{Li2013PVO}, IPVO\cite{Peng2014IPVO} and PVO-\emph{k}\cite{Ou2014PVOk}, in PPVO, every pixel is predicted by context pixels, breaking through the block constraint. In PPVO, to ensure reversibility, pixels in lower right direction are utilized as context region to predict the current pixel which is shown in Fig. \ref{Fig.Context}(a). The prediction is more accurate, however, the surrounding context information is not fully utilized. There are some other pixels are omitted which is beneficial to provide more useful information for prediction. Clearly, for example, in Fig. \ref{Fig.Context}(b), pixels $\{c_{4}, c_{9}, c_{10}, c_{12}, c_{17}, c_{18}, c_{21}, c_{22}, c_{24}\}$ in left lower direction should be used in prediction procedure as one part of context pixels which is omitted in PPVO. Then the extended PPVO predictor is introduced to show how to make better prediction.
+Compared with PVO-based methods such as PVO\cite{Li2013PVO}, IPVO\cite{Peng2014IPVO} and PVO-\emph{k}\cite{Ou2014PVOk}, in PPVO, every pixel is predicted by context pixels, breaking through the block constraint. In PPVO, to ensure reversibility, pixels in lower right direction are utilized as context region to predict the current pixel which is shown in Fig. \ref{Fig.PPVOCNandHist}(a). The prediction is more accurate, however, the surrounding context information is not fully utilized. There are some other pixels are omitted which is beneficial to provide more useful information for prediction. Clearly, for example, in Fig. \ref{Fig.Context}, pixels $\{c_{4}, c_{9}, c_{10}, c_{12}, c_{17}, c_{18}, c_{21}, c_{22}, c_{24}\}$ in left lower direction should be used in prediction procedure as one part of context pixels which is omitted in PPVO. Then the extended PPVO predictor is introduced to show how to make better prediction.
 \begin{figure*}
-\centering
-\subfigure[PPVO.]{
-    \begin{minipage}[t]{0.21\linewidth}
-    \centering
-    \includegraphics[width=1\textwidth]{figures/PPVOContext.pdf}
-    \end{minipage}
-}
-\qquad\quad
-\subfigure[Extended PPVO.]{
-    \begin{minipage}[t]{0.37\linewidth}
+%\centering
+%\subfigure[PPVO.]{
+%    \begin{minipage}[t]{0.23\linewidth}
+%    \centering
+%    \includegraphics[width=1\textwidth]{figures/PPVOContext.pdf}
+%    \end{minipage}
+%}
+%\qquad\qquad
+%\subfigure[Extended PPVO.]{
+    \begin{minipage}[t]{0.46\linewidth}
     \centering
     \includegraphics[width=1\textwidth]{figures/ExtendedPPVOContext.pdf}
     \end{minipage}
-}		
+%}		
 \centering
-\caption{Context pixels of PPVO(left) and Extended PPVO(right).}
+\caption{Context pixels of $x$ by Extended PPVO.}
 \label{Fig.Context}
 \end{figure*}
 
@@ -342,13 +340,13 @@ where ${\rm H}$ is the PEH and ${\rm H}(i)$ is the frequency of pixels whose pre
     \end{minipage}
 }
 \subfigure[Airplane]{
-    \begin{minipage}[t]{0.225\linewidth}
+    \begin{minipage}[t]{0.223\linewidth}
     \centering
     \includegraphics[width=1\textwidth]{figures/Comparison/airplane.pdf}
     \end{minipage}
 }
 \subfigure[Barbara]{
-    \begin{minipage}[t]{0.225\linewidth}
+    \begin{minipage}[t]{0.227\linewidth}
     \centering
     \includegraphics[width=1\textwidth]{figures/Comparison/barbara.pdf}
     \end{minipage}
