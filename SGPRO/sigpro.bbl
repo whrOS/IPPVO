@@ -150,4 +150,9 @@ W.~He, G.~Xiong, S.~Weng, Z.~Cai, Y.~Wang, Reversible data hiding using
   multi-pass pixel-value-ordering and pairwise prediction-error expansion,
   Information Sciences. 49.
 
+\bibitem{Kim2018Skewed}
+S.~Kim, X.~Qu, V.~Sachnev, H.~J. Kim, Skewed histogram shifting for reversible
+  data hiding using a pair of extreme predictions, IEEE Trans. Circuits Syst.
+  Video Technol.
+
 \end{thebibliography}

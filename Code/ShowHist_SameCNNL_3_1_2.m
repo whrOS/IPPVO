@@ -6,21 +6,18 @@
 clc;clear;
 addpath(genpath('Origin Images')); addpath(genpath('result')); addpath(genpath('tools'));
 
-mask1 = [false, true, true;
-    true, true,  false;
-    true, false, false];
-mask2 = [false, false, true, true;
-    true, true, true,  false;
-    true, true, false, false];
-mask3 = [false, false, false, true, true;
-         true,  true, true, true,  false;
-         false, true, true, false, false];
+mask = [false, true, true;
+        true, true, false;];
+mask1 = [false, true;
+        true, true];
+mask2 = [false, false, true;
+        true, true, true;];
 
 
 Imgs = {'Lena', 'Baboon', 'Airplane', 'Barbara', 'Lake', 'Peppers', 'Boat', 'Elaine'};
 
 %%
-tt = 3;
+tt = 1;
 Iname = Imgs{tt};
 istr = ['ShowHist_',Iname,'.mat'];
 fprintf('%s\n', istr);
@@ -41,19 +38,15 @@ for i = 1:(A-2)
     for j = 1:(B-2)
         % 2x2 block
         if j == 1
-            X = I(i:i+2,j:j+2);
+            X = I(i:i+1,j:j+1);
             X = X(mask1);
         end
         
-        if j == 2
-            X = I(i:i+2,j-1:j+2);
+        if j >= 2
+            X = I(i:i+1,j-1:j+1);
             X = X(mask2);
         end
         
-        if j >= 3
-            X = I(i:i+2,j-2:j+2);
-            X = X(mask3);
-        end
         NL(i,j) = max(X) - min(X);
         T = NL(i,j);
         [Y, ~] = sort(X);
@@ -97,8 +90,9 @@ NL2 = zeros(A-2,B-2);
 for i = 1:(A-2)
     for j = 1:(B-2)       
         % 2x2 block
-        X = I(i:i+2,j:j+2);
-        X = X(2:end);
+        X = I(i:i+1,j:j+2);
+        X = X(mask);
+%         X = X(2:end);
         NL2(i,j) = max(X) - min(X);
         T = NL2(i,j);
         [Y, ~] = sort(X);
@@ -211,6 +205,8 @@ else
 end
 
 % ×ÜµÄED/EC
+% Ratio = D1(end) / (C1(end)+D1(end));
+% ratio = d1(end) / (c1(end)+d1(end));
 Ratio = (D1(end)-C1(end)*0.5) / (D1(end)+C1(end)*0.5);
 ratio = (d1(end)-c1(end)*0.5) / (d1(end)+c1(end)*0.5);
 [Ratio ratio]
