@@ -174,7 +174,11 @@ Thus, for the decoder, to extract data and recover the original pixel, the predi
   \item If current marked pixel $\tilde{x}$ belong to $S_3$, $C_{\rm min}$ is chosen as the prediction of $x$ denoted as $\hat{x} = C_{\rm min}$.
   \item if current marked pixel $\tilde{x}$ belong to $S_4$, $C_{\rm max}$ is chosen as the prediction of $x$ denoted as $\hat{x} = C_{\rm max}$.
 \end{itemize}
-The the marked prediction-error $\tilde{e}$ is modified to obtain the prediction-error $e$ by
+The the marked prediction-error $\tilde{e}$ is computed by
+\begin{equation}\label{eq:dPE}
+\tilde{e} = \tilde{x} - \hat{x},
+\end{equation}
+and is modified to obtain the prediction-error $e$ by
 \begin{equation}\label{eq:dPPVOMPE}
 e = \left\{\begin{array}{ll}
 \tilde{e},      & \text{if } e = 0      \\
@@ -352,23 +356,23 @@ Here an example is taken to bring out the strategy. As shown in Fig. \ref{Fig.Ev
 \end{figure*}
 
 %% embedding method
-In the proposed method, to combine the two size of $C_1$ and $C_2$ for prediction, pixels on the cover images are divided into three parts by two thresholds $T_1$, $T_2$ ($0 \leq T_1 \leq T2$). The region of pixels in $X_{T_1}$ are considered to be smooth, and these pixels are predicted by the context pixels of $C_1$. And the region of pixels in $X_{T_2} \setminus X_{T_1}$ are seem to be normal smooth, which are predicted by the context pixels of $C_2$. Other pixels are all omitted and do not participate in the embedding procedure. The above strategy is reasonable. In Fig. \ref{Fig.Eval}(c), it shows that the distance between the two curves is growing with the increase of threshold. This verify that in the area with higher complexity, more inaccurately predicted pixels are skipped with context pixels in $C_2$. Therefore, the pixels in smooth regions $X_{T_1}$ is predicted by the context pixels of $C_1$. This provides much more embedding capacity. And for the pixels in the normal regions $X_{T_2}$, pixels of $C_2$ are chosen as context pixels to predict, making the distortion as low as possible. For example, Fig. \ref{Fig.EmbedExample} shows the the embedding procedures for the three types of pixels, where $(T_1, T_2) = (15, 25)$. For the first pixel value $x = 150$, because the complexity ${\rm NL} = 10$ of the pixel less than the small threshold $T_1$, the pixel is in a smooth region and context pixels $C = \{148, 150, 150, 148\}$ are chosen. The prediction-error of the pixel value is $p = 0$. One bit secret data $b = 1$ can be embedded by increasing the $x$ by $1$ to $\hat{x} = 151$. However, if context pixels of $C_2$ are chosen for prediction, the pixel wound be skipped because of $\min(C) < x < \max(C)$. For the second pixel $x = 135$, it is in normal region, where the complexity value ${\rm NL} = 24$ larger than $T_1$ but less than $T_2$. The context pixels $C = \{137, 136, 139, 138, 140, 135, 142, 137, 136, 139\}$ are chosen and prediction-error is $p = 0$. One bit data $b = 0$ can be embedded by remaining the pixel value $\hat{x} = x = 135$. If context pixels of $C_1$ are chosen, the prediction-error wound be $p = 1$ and no one bit data wound be embedded. The third pixel $x = 147$ is in a rough region whose complexity ${\rm NL} = 34$ larger than $T_2$ and it is skipped.
+In the proposed method, to combine the two size of $C_1$ and $C_2$ for prediction, pixels on the cover images are divided into three parts by two thresholds $t_1$, $t_2$ ($0 \leq t_1 \leq t_2$). The region of pixels in $X_{t_1}$ are considered to be smooth, and these pixels are predicted by the context pixels of $C_1$. And the region of pixels in $X_{t_2} \setminus X_{t_1}$ are seem to be normal smooth, which are predicted by the context pixels of $C_2$. Other pixels are all omitted and do not participate in the embedding procedure. The above strategy is reasonable. In Fig. \ref{Fig.Eval}(c), it shows that the distance between the two curves is growing with the increase of threshold. This verify that in the area with higher complexity, more inaccurately predicted pixels are skipped with context pixels in $C_2$. Therefore, the pixels in smooth regions $X_{t_1}$ is predicted by the context pixels of $C_1$. This provides much more embedding capacity. And for the pixels in the normal regions $X_{t_2}$, pixels of $C_2$ are chosen as context pixels to predict, making the distortion as low as possible. For example, Fig. \ref{Fig.EmbedExample} shows the the embedding procedures for the three types of pixels, where $(t_1, t_2) = (15, 25)$. For the first pixel value $x = 150$, because the complexity ${\rm NL} = 10$ of the pixel less than the small threshold $t_1$, the pixel is in a smooth region and context pixels $C = \{148, 150, 150, 148\}$ are chosen. The prediction-error of the pixel value is $p = 0$. One bit secret data $b = 1$ can be embedded by increasing the $x$ by $1$ to $\hat{x} = 151$. However, if context pixels of $C_2$ are chosen for prediction, the pixel wound be skipped because of $\min(C) < x < \max(C)$. For the second pixel $x = 135$, it is in normal region, where the complexity value ${\rm NL} = 24$ larger than $t_1$ but less than $t_2$. The context pixels $C = \{137, 136, 139, 138, 140, 135, 142, 137, 136, 139\}$ are chosen and prediction-error is $p = 0$. One bit data $b = 0$ can be embedded by remaining the pixel value $\hat{x} = x = 135$. If context pixels of $C_1$ are chosen, the prediction-error wound be $p = 1$ and no one bit data wound be embedded. The third pixel $x = 147$ is in a rough region whose complexity ${\rm NL} = 34$ larger than $t_2$ and it is skipped.
 \begin{figure*}
 \centering
-\includegraphics[width=0.85\textwidth]{figures/EmbedwithTh.pdf}
+\includegraphics[width=0.7\textwidth]{figures/EmbedwithTh.pdf}
 \centering
 \caption{Example.}
 \label{Fig.EmbedExample}
 \end{figure*}
 
-And for the purpose of finding suitable thresholds, let ${\rm H}_{T_1, T_2}$ as the histogram of prediction-errors derived from the pixels in $X_{T_1}$ with $C_1$ and pixels in $X_{T2} \setminus X_{T_2}$ with $C_2$. For a given embedding capacity $EC$, the optimal thresholds $(T_1^*, T_2^*)$ are obtained by
+And for the purpose of finding suitable thresholds, let ${\rm H}_{t_1, t_2}$ as the histogram of prediction-errors derived from the pixels in $X_{t_1}$ with $C_1$ and pixels in $X_{t_2} \setminus X_{t_2}$ with $C_2$. For a given embedding capacity $EC$, the optimal thresholds $(t_1^*, t_2^*)$ are obtained by
 \begin{equation}\label{eq:thresholds}
 \begin{array}{ll}
-\mathop{\arg\min}\limits_{0 \leq T_1 \leq T_2} & \frac{\frac{1}{2}{\rm H}_{T_1, T_2}(0) + \sum_{i \geq 1}{\rm H}_{T_1, T_2}(i)}{{\rm H}_{T_1, T_2}(0)}\\
-s.t.                                    & {\rm H}_{T_1, T_2}(0) \geq EC
+\mathop{\arg\min}\limits_{0 \leq t_1 \leq t_2} & \frac{\frac{1}{2}{\rm H}_{t_1, t_2}(0) + \sum_{i \geq 1}{\rm H}_{t_1, t_2}(i)}{{\rm H}_{t_1, t_2}(0)}\\
+s.t.                                    & {\rm H}_{t_1, t_2}(0) \geq EC
 \end{array}.
 \end{equation}
-Fig. \ref{Fig.Thresholds} shows the optimal thresholds $(T_1^*, T_2^*)$ by (\ref{eq:thresholds}) for some capacities. It is note that the two optimal thresholds are positively correlated. However, it is difficult to find the exact relationship between them. So, in the optimization process, we find the optimal parameters by traversing all the values. The pink curve of $C_{12}$ in Fig. \ref{Fig.Eval0} shows the better result is achieved by combining two size context with two complexity thresholds.
+Fig. \ref{Fig.Thresholds} shows the optimal thresholds $(t_1^*, t_2^*)$ by (\ref{eq:thresholds}) for some capacities. It is note that the two optimal thresholds are positively correlated. However, it is difficult to find the exact relationship between them. So, in the optimization process, we find the optimal parameters by traversing all the values. The pink curve of $C_{12}$ in Fig. \ref{Fig.Eval0} shows the better result is achieved by combining two size context with two complexity thresholds.
 \begin{figure*}
 \centering
 \includegraphics[width=0.5\textwidth]{figures/Thresholds.pdf}
@@ -377,41 +381,7 @@ Fig. \ref{Fig.Thresholds} shows the optimal thresholds $(T_1^*, T_2^*)$ by (\ref
 \label{Fig.Thresholds}
 \end{figure*}
 
-\subsection{Data Embedding and Extraction Procedures}\label{sec:3.3}
-The data embedding procedure is divided into the following steps to introduce as shown in Fig. \ref{Fig.Procedures}. Firstly, a location map ${\rm LM}$ is constructed to solve overflow/underflow problem. For $i$-th pixel $x_i$, if $x_i = 0$ or $x_i = 255$, we assign ${\rm LM}(i) = 1$. Otherwise, we assign ${\rm LM}(i) = 0$. All pixels equals $255$ are modified to $254$ and $0$ are modified to $1$. Because ${\rm LM}$ records all the locations where the overflow/underflow may occur, original pixels can be recovered. Next, for the given several context sizes $\{C_1, ..., C_N\}$ ($N$ is the number of context sizes), the complexity ${\rm NL}(i)$ of current pixel value $x_i$ is calculated the sum of the absolution differences of the horizontal and vertical of every two adjacent pixels belong to the largest size context $C_N$. And context pixels to predict $x_i$ are selected by comparing ${\rm NL}(i)$ with the given thresholds $\{T_1, ..., T_N\}$($0 \leq T_1 < T_2 < ... < T_N$ ), which is similar to the procedure described in section \ref{sec:3.2}. Then, $x_i$ is predicted by the chosen context pixels by (\ref{eq:PPVOPE}) and one bit data is embedded by modifying $x_i$ to $\hat{x}_i$ by (\ref{eq:PPVOMPixel}). The steps of prediction and embedding are performed pixel-by-pixel until all secret data is embedded and current pixel position is recorded as $k_{\rm end}$. Finally, for reversibility, some auxiliary information should be used for blind decoding such as
-\begin{itemize}
-  %\item number of context sizes $N$ (2 bits),
-  \item the complexity thresholds $\{T_1, ..., T_N\}$ ($11 \times N$ bits),
-  \item the pixel position where data embedding ends (18 bits),
-  \item length of compressed location map $L$ (18 bits),
-  \item the compressed location map ${\rm LM}$ ($L$ bits).
-\end{itemize}
-To embed the auxiliary information, LSB of first $36 + 11 \times N + L$ bits pixels of the image is recorded to obtain a binary vector $V_{\rm LSB}$ and then replaced by the auxiliary information. $V_{\rm LSB}$ is embedded into pixels after $x_{k_{\rm end}}$ by the same method by (\ref{eq:PPVOMPixel}) at last.
-During the whole embedding procedure, the threshold $T_1$ is selected from 1 and increased by 1 iteratively and $j$-th threshold $T_j$ is selected from $T_{j-1} + 1$ and increased by 1 iteratively. The optimal thresholds are obtained by traversing all values of pixel complexities.
-
-The extraction procedure is an opposite process as shown in Fig. \ref{Fig.Procedures}. Firstly, auxiliary information is gotten by reading LSB of first $38 + 11 \times N + L$ bits pixels and replaced by LSB of pixels after $x_{k_{\rm end}}$. Next, for marked pixel value $\hat{x}$, complexity is computed as the same as embedding procedure by extracting data pixel-by-pixel in reverse order. And, with extracted $N$ complexity thresholds $\{T_1, ..., T_N\}$, the same context pixels $C$ of $\hat{x}$ as original pixel value $x$ can be obtained. Then, prediction-error $\hat{p}$ of the marked pixel value $\hat{x}$ is computed by (\ref{eq:PPVOdMinNeqMax}). And the original pixel value $x$ is recovered by (\ref{eq:PPVOdMPixel}).
-Meanwhile, the secret data $b$ equals 1 if $\hat{p}=1$ or $0$ if $\hat{p} = 0$. Finally, original image is recovered by ${\rm LM}$ referring the embedding procedure. The flowchart of extraction procedure is shown in Fig. \ref{Fig.Procedures}.
-
-\begin{figure*}
-\centering
-\includegraphics[width=0.85\textwidth]{figures/Procedures.pdf}
-\centering
-\caption{Procedures.}
-\label{Fig.Procedures}
-\end{figure*}
-
-%----------------------------------------------------------------------------------------
-\section{Experimental Results}\label{sec:4}
-% N \in {1, 2, 3, 4}, N=4 been chosen,
-In this section, experimental results of proposed method are presented. The performance is compared with three typical PVO-based methods of Peng \emph{et al.} \cite{Peng2014IPVO}, Ou \emph{et al.} \cite{Ou2014PVOk} and Qu \emph{et al.} \cite{Qu2015PPVO}. The proposed method is implemented on MatLab version 2018a on a tower server (SUPERMICRO LT-7038AX) and for a given embedding capacity, embedding procedure can be implemented less than four seconds. The experimental results are evaluated on eight standard gray-scale $512 \times 512$-sized images including Lena, Baboon, Airplane, Barabra, Lake, Boat, Peppers and Eliane.
-
-Firstly, we consider the impact of number $N$ of context sizes to the embedding capacity. As shown in Fig. \ref{fig:size}, for each given capacity, $N$ is from $1$ to $4$, corresponding the sizes $C_1 \in \{C_1\}$, $C_{12} \in \{C_1, C_2\}$, $C_{123} \in \{C_1, C_2, C_3\}$ and $C_{1234} \in \{C_1, C_2, C_3, C_4\}$, respectively. It shows that although the embedding performance increases with the increase of $N$, it is already very small when $N = 4$. Therefore, balancing the embedding performance and embedding time complexity, we set $N = 4$ as a suitable size number. There are four complexity thresholds $\{T_1, T_2, T_3, T_4\}$ to choose context pixels for the current pixel, and the smoother the area where the pixel is, the less context pixels are used to predict.
-
-Next, Fig. \ref{fig:size} shows the performance comparison on the eight test images. The capacity increases from 5,000 bits to the largest embedding capacity with a step of 1,000 bits. The figures reveal that the proposed method is superior to other three PVO-basd methods. Specifically, the performance comparison for given capacities of 10,000 bits and 20,000 bits are represented in Table~\ref{tab:10000bits} and Table~\ref{tab:20000bits}.
-
-The improved PVO-based RDH proposed by Peng \emph{et al.} \cite{Peng2014IPVO} is an improvement of the original PVO RDH \cite{Li2013PVO}, the smooth blocks are utilized for data embedding by considering the original order of pixels in each block. Fig. \ref{fig:size} shows that its performance is mediocre compared with other methods. Through Table~\ref{tab:10000bits} and Table~\ref{tab:20000bits}, the proposed method obtain an improvement of PSNR of 0.93 dB and 1.0 dB respectively. The PVO-$k$ proposed by Qu \emph{et al.} \cite{Qu2015PPVO} is another RDH method which aims to make full use of smooth blocks as well. In this method, the blocks with more than one largest/smallest pixel value are utilized by modifying the largest/smallest pixel values concurrent. It shows a better performance than the improved PVO-based method but it is still unsatisfactory. According to Table~\ref{tab:10000bits} and Table~\ref{tab:20000bits}, the proposed method obtain an improvement of PSNR of 0.66 dB and 0.79 dB respectively.
-
-The PPVO RDH proposed by Qu \emph{et al.} \cite{Qu2015PPVO} is different from traditional PVO-based RDH methods. It breaks through the block constraint and prediction process is implemented pixel by pixel. In this method, whatever the pixel is in a smooth or complex area, the context pixels for prediction is constant. The performance of PPVO achieve a superior performance than traditional PVO-based RDH methods. According to the Table~\ref{tab:10000bits} and Table~\ref{tab:20000bits}, the proposed method considers the impact of the number of context pixels and get a increase of PSNR of 0.60 dB and 0.14 dB respectively.
+Finally, we consider the impact of number $N$ of context sizes to the embedding capacity. As shown in Fig. \ref{fig:size}, for each given capacity, $N$ is from $1$ to $4$, corresponding the sizes $C_1 \in \{C_1\}$, $C_{12} \in \{C_1, C_2\}$, $C_{123} \in \{C_1, C_2, C_3\}$ and $C_{1234} \in \{C_1, C_2, C_3, C_4\}$, respectively. It shows that although the embedding performance increases with the increase of $N$, it is already very small when $N = 4$. Therefore, balancing the embedding performance and embedding time complexity, we set $N = 3$ as a suitable size number. Therefore,  for the current pixel, there are three complexity thresholds $\{t_1, t_2, t_3\}$ to choose context pixels The smoother the area where the pixel is, the less context pixels are used to predict.
 
 \begin{figure*}
 \centering
@@ -428,53 +398,34 @@ The PPVO RDH proposed by Qu \emph{et al.} \cite{Qu2015PPVO} is different from tr
 \includegraphics[width=1\textwidth]{figures/Result/size/Baboon.pdf}
 \end{minipage}
 }
-
-\subfigure{
-\begin{minipage}[t]{0.39\linewidth}
-\centering
-\includegraphics[width=1\textwidth]{figures/Result/size/Airplane.pdf}
-\end{minipage}
-}
-\qquad
-\subfigure{
-\begin{minipage}[t]{0.39\linewidth}
-\centering
-\includegraphics[width=1\textwidth]{figures/Result/size/Barbara.pdf}
-\end{minipage}
-}
-
-\subfigure{
-\begin{minipage}[t]{0.39\linewidth}
-\centering
-\includegraphics[width=1\textwidth]{figures/Result/size/Lake.pdf}
-\end{minipage}
-}
-\qquad
-\subfigure{
-\begin{minipage}[t]{0.39\linewidth}
-\centering
-\includegraphics[width=1\textwidth]{figures/Result/size/Boat.pdf}
-\end{minipage}
-}
-
-\subfigure{
-\begin{minipage}[t]{0.39\linewidth}
-\centering
-\includegraphics[width=1\textwidth]{figures/Result/size/Peppers.pdf}
-\end{minipage}
-}
-\qquad
-\subfigure{
-\begin{minipage}[t]{0.39\linewidth}
-\centering
-\includegraphics[width=1\textwidth]{figures/Result/size/Elaine.pdf}
-\end{minipage}
-}
 \centering
 \caption{size.}
 \label{fig:size}       % Give a unique label
 \end{figure*}
 
+
+\subsection{Data Embedding and Extraction Procedures}\label{sec:3.3}
+The data embedding procedure is divided into the following steps to introduce as follow. Firstly, a location map ${\rm LM}$ is constructed to solve overflow/underflow problem. For $i$-th pixel $x_i$, if $x_i = 0$ or $x_i = 255$, we assign ${\rm LM}(i) = 1$. Otherwise, we assign ${\rm LM}(i) = 0$. All pixels equals $255$ are modified to $254$ and $0$ are modified to $1$. Because ${\rm LM}$ records all the locations where the overflow/underflow may occur, original pixels can be recovered. Next, for the given several context sizes $\{C_1, C_2, C_3\}$, the complexity ${\rm NL}(i)$ of current pixel value $x_i$ is calculated the sum of the absolution differences of the horizontal and vertical of every two adjacent pixels belong to the largest size context $C_3$. And context pixels to predict $x_i$ are selected by comparing ${\rm NL}(i)$ with the given thresholds $\{t_1, t_2, t_3\}$($0 \leq T_1 < T_2 < T_3$ ), which is similar to the procedure described in section \ref{sec:3.2}. Then, $x_i$ is predicted by the chosen context pixels by (\ref{eq:PPVOPE}) and one bit data is embedded by modifying $x_i$ to $\hat{x}_i$ by (\ref{eq:PPVOMPixel}). The steps of prediction and embedding are performed pixel-by-pixel until all secret data is embedded and current pixel position is recorded as $k_{\rm end}$. Finally, for reversibility, some auxiliary information should be used for blind decoding such as
+\begin{itemize}
+  \item the complexity thresholds $\{t_1, t_1, t_3\}$ ($11 \times 3 = 33$ bits),
+  \item the pixel position where data embedding ends $k_{\rm end}$ (18 bits),
+  \item length of compressed location map $L$ (18 bits),
+  \item the compressed location map ${\rm LM}$ ($L$ bits).
+\end{itemize}
+To embed the auxiliary information, LSB of first $69 + L$ bits pixels of the image is recorded to obtain a binary vector $V_{\rm LSB}$ and then replaced by the auxiliary information. $V_{\rm LSB}$ is embedded into pixels after $x_{k_{\rm end}}$ by the same way as secret data embedding. During the whole embedding procedure, the threshold $t_1$ is selected from 1 and increased by 1 iteratively and $j$-th threshold $t_j$ is selected from $t_{j-1} + 1$ and increased by 1 iteratively. The optimal thresholds are obtained by traversing all values of pixel complexities.
+
+The extraction procedure is an opposite process. Firstly, auxiliary information is gotten by reading LSB of first $69 + L$ bits pixels and replaced by LSB of pixels after $x_{k_{\rm end}}$. Next, for marked pixel value $\tilde{x}$, complexity is computed as the same as embedding procedure by extracting data pixel-by-pixel in reverse order. And, with extracted three complexity thresholds $\{t_1, t_2, t_3\}$, the same context pixels $C$ of $\tilde{x}$ as original pixel value $x$ can be obtained. Then, prediction-error $\tilde{e}$ of the marked pixel value $\tilde{x}$ is computed by (\ref{eq:dPE}). And the original pixel value $x$ is recovered by (\ref{eq:dPPVOMPE}). Meanwhile, the secret data $b$ can be extracted that $b = 1$ if $\tilde{e} \in \{-1, 1\}$ or $b = 0$ if $\tilde{e} = 0$. Finally, original image is recovered by ${\rm LM}$ referring the embedding procedure. 
+
+%----------------------------------------------------------------------------------------
+\section{Experimental Results}\label{sec:4}
+% N \in {1, 2, 3, 4}, N=4 been chosen,
+In this section, experimental results of proposed method are presented. The performance is compared with three typical PVO-based methods of Peng \emph{et al.} \cite{Peng2014IPVO}, Ou \emph{et al.} \cite{Ou2014PVOk} and Qu \emph{et al.} \cite{Qu2015PPVO}. The proposed method is implemented on MatLab version 2018a on a tower server (SUPERMICRO LT-7038AX) and for a given embedding capacity, embedding procedure can be implemented less than four seconds. The experimental results are evaluated on eight standard gray-scale $512 \times 512$-sized images including Lena, Baboon, Airplane, Barabra, Lake, Boat, Peppers and Eliane.
+
+Next, Fig. \ref{fig:size} shows the performance comparison on the eight test images. The capacity increases from 5,000 bits to the largest embedding capacity with a step of 1,000 bits. The figures reveal that the proposed method is superior to other three PVO-basd methods. Specifically, the performance comparison for given capacities of 10,000 bits and 20,000 bits are represented in Table~\ref{tab:10000bits} and Table~\ref{tab:20000bits}.
+
+The improved PVO-based RDH proposed by Peng \emph{et al.} \cite{Peng2014IPVO} is an improvement of the original PVO RDH \cite{Li2013PVO}, the smooth blocks are utilized for data embedding by considering the original order of pixels in each block. Fig. \ref{fig:size} shows that its performance is mediocre compared with other methods. Through Table~\ref{tab:10000bits} and Table~\ref{tab:20000bits}, the proposed method obtain an improvement of PSNR of 0.93 dB and 1.0 dB respectively. The PVO-$k$ proposed by Qu \emph{et al.} \cite{Qu2015PPVO} is another RDH method which aims to make full use of smooth blocks as well. In this method, the blocks with more than one largest/smallest pixel value are utilized by modifying the largest/smallest pixel values concurrent. It shows a better performance than the improved PVO-based method but it is still unsatisfactory. According to Table~\ref{tab:10000bits} and Table~\ref{tab:20000bits}, the proposed method obtain an improvement of PSNR of 0.66 dB and 0.79 dB respectively.
+
+The PPVO RDH proposed by Qu \emph{et al.} \cite{Qu2015PPVO} is different from traditional PVO-based RDH methods. It breaks through the block constraint and prediction process is implemented pixel by pixel. In this method, whatever the pixel is in a smooth or complex area, the context pixels for prediction is constant. The performance of PPVO achieve a superior performance than traditional PVO-based RDH methods. According to the Table~\ref{tab:10000bits} and Table~\ref{tab:20000bits}, the proposed method considers the impact of the number of context pixels and get a increase of PSNR of 0.60 dB and 0.14 dB respectively.
 
 \begin{figure*}
 \centering
