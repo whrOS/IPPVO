@@ -88,6 +88,8 @@
   title={A high capacity reversible data hiding scheme based on right-left shift},
   author={Wang, Weiqing and Ye, Junyong and Wang, Tongqing and Wang, Weifu},
   journal={Signal Process.},
+  volume={},
+  number={},
   year={2018},
 }
 
@@ -319,7 +321,6 @@
   author={Weng, Shaowei and Liu, Yijun and Pan, Jeng Shyang and Cai, Nian},
   journal={J. Vis. Commun. Image Represent.},
   volume={41},
-  pages={S104732031630205X},
   year={2016},
 }
 31
@@ -328,7 +329,6 @@
   author={Weng, Shaowei and Zhang, Guohao and Pan, Jeng Shyang and Zhou, Zhili},
   journal={J. Vis. Commun. Image Represent.},
   volume={48},
-  pages={S1047320317301062},
   year={2017},
 }
 32
@@ -340,10 +340,10 @@
   year={2018},
 }
 33
-@article{He2018Reversible,
-  title={Reversible data hiding using multi-pass pixel-value-ordering and pairwise prediction-error expansion},
-  author={He, Wenguang and Xiong, Gangqiang and Weng, Shaowei and Cai, Zhanchuan and Wang, Yaomin},
-  journal={Information Sciences.},
-  volume={49},
+@article{Kim2018Skewed,
+  title={Skewed Histogram Shifting for Reversible Data Hiding using a Pair of Extreme Predictions},
+  author={Kim, Suah and Qu, Xiaochao and Sachnev, Vasily and Kim, Hyoung Joong},
+  journal={IEEE Trans. Circuits Syst. Video Technol.},
+  volume={},
   year={2018},
 }

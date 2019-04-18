@@ -9,9 +9,10 @@ for tt = 1 : 1 : 8
     res2 = load(['2/', istr]); res2 = res2.res;
     res3 = load(['3/', istr]); res3 = res3.res;
     res4 = load(['4/', istr]); res4 = res4.res;
-    res5 = load(['5/', istr]); res5 = res5.res;
+%     res5 = load(['5/', istr]); res5 = res5.res;
 
-    lt = max([size(res2,2), size(res3,2), size(res4,2), size(res5,2)]);
+%     lt = max([size(res2,2), size(res3,2), size(res4,2), size(res5,2)]);
+    lt = max([size(res2,2), size(res3,2), size(res4,2)]);
 %     lt = max([size(res2,2), size(res3,2), size(res4,2)]);
     res = zeros(3, lt);
 
@@ -38,14 +39,7 @@ for tt = 1 : 1 : 8
                 sz = 4;
             end
         end
-        if i <= size(res5,2)
-            if res5(2,i) > psnr
-                psnr = res5(2,i);
-                pl = res5(1,i);
-                sz = 5;
-            end
-        end
         res(:,i) = [pl, psnr, sz];
     end
-    save(istr, 'res');
+    save(['th3_' istr], 'res');
 end

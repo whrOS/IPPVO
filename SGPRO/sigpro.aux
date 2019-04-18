@@ -4,6 +4,7 @@
 \emailauthor{yzhao@bjtu.edu.cn}{Yao Zhao\corref {cor}}
 \emailauthor{rrni@bjtu.edu.cn}{Rongrong Ni}
 \Newlabel{cor}{1}
+\citation{Shi2016Reversible}
 \citation{Tian2003DE,Qin2013An,Thodi2007Expansion,Hu2009DE,Li2013A}
 \citation{Hong2009Reversible,Hong2010A,Xiaolong2013General,Wang2018A}
 \citation{Sachnev2009Reversible,Tsai2009Reversible,Gao2011Lossless,Li2011Efficient,Hong2011Adaptive,Wu2012Reversible,Qin2013An,Ou2013Pairwise,Dragoi2014Local,Li2015Efficient,Dragoi2016Adaptive,Wang2017Rate}
@@ -25,7 +26,6 @@
 \citation{Xiang2015A}
 \citation{Weng2016Reversible}
 \citation{Qu2015PPVO}
-\citation{Kim2018Skewed}
 \citation{Qu2015PPVO}
 \citation{Qu2015PPVO}
 \citation{Li2013PVO}
@@ -38,26 +38,28 @@
 \@writefile{toc}{\contentsline {section}{\numberline {2}Related Works}{3}}
 \newlabel{sec:2}{{2}{3}}
 \newlabel{eq:S}{{2}{3}}
+\citation{Li2013PVO,Peng2014IPVO}
 \newlabel{eq:PE}{{1}{4}}
 \newlabel{eq:PPVOMPE}{{2}{4}}
-\newlabel{eq:dPE}{{3}{4}}
-\newlabel{eq:dPPVOMPE}{{4}{4}}
-\citation{Li2013PVO,Peng2014IPVO}
+\newlabel{eq:PPVOMPixel}{{3}{4}}
+\newlabel{eq:dPE}{{4}{4}}
+\newlabel{eq:dPPVOMPE}{{5}{4}}
+\newlabel{eq:dPPVOX}{{6}{4}}
 \citation{Li2013PVO}
 \citation{Peng2014IPVO}
 \citation{Ou2014PVOk}
-\citation{Li2013PVO}
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Context pixels of $x$ by extended PPVO predictor.}}{5}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(a)}{\ignorespaces {PPVO predictor with $n=4$}}}{5}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(b)}{\ignorespaces {Extended PPVO predictor with $n=8$.}}}{5}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(c)}{\ignorespaces {PPVO predictor with $n=8$}}}{5}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(d)}{\ignorespaces {Extended PPVO predictor with $n=8$.}}}{5}}
+\newlabel{Fig.Context}{{2}{5}}
 \@writefile{toc}{\contentsline {section}{\numberline {3}Proposed Method}{5}}
 \newlabel{sec:3}{{3}{5}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {3.1}Extended PPVO predictor}{5}}
 \newlabel{sec:3.1}{{3.1}{5}}
-\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Context pixels of $x$ by extended PPVO predictor.}}{6}}
-\@writefile{lof}{\contentsline {subfigure}{\numberline{(a)}{\ignorespaces {PPVO predictor with $n=4$}}}{6}}
-\@writefile{lof}{\contentsline {subfigure}{\numberline{(b)}{\ignorespaces {Extended PPVO predictor with $n=8$.}}}{6}}
-\@writefile{lof}{\contentsline {subfigure}{\numberline{(c)}{\ignorespaces {PPVO predictor with $n=8$}}}{6}}
-\@writefile{lof}{\contentsline {subfigure}{\numberline{(d)}{\ignorespaces {Extended PPVO predictor with $n=8$.}}}{6}}
-\newlabel{Fig.Context}{{2}{6}}
-\newlabel{eq:Pshift}{{5}{6}}
+\citation{Li2013PVO}
+\newlabel{eq:Pshift}{{7}{6}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {3.2}Multi-size based Embedding Method for MHM}{6}}
 \newlabel{sec:3.2}{{3.2}{6}}
 \@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Comparison of normalized PEH of $p$ of extended PPVO with context pixels in Fig. 2\hbox {}.}}{7}}
@@ -66,61 +68,62 @@
 \@writefile{lof}{\contentsline {subfigure}{\numberline{(c)}{\ignorespaces {Lena, $n = 8$}}}{7}}
 \@writefile{lof}{\contentsline {subfigure}{\numberline{(d)}{\ignorespaces {Baboon, $n = 8$}}}{7}}
 \newlabel{Fig.ComparisonEPPVO}{{3}{7}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Context pixels of $x$ by Extended PPVO.}}{8}}
-\@writefile{lof}{\contentsline {subfigure}{\numberline{(a)}{\ignorespaces {$C_1$ of $n = 4$}}}{8}}
-\@writefile{lof}{\contentsline {subfigure}{\numberline{(b)}{\ignorespaces {$C_2$ of $n = 10$}}}{8}}
-\@writefile{lof}{\contentsline {subfigure}{\numberline{(c)}{\ignorespaces {$C_3$ of $n = 18$}}}{8}}
-\@writefile{lof}{\contentsline {subfigure}{\numberline{(d)}{\ignorespaces {$C_4$ of $n = 24$}}}{8}}
-\newlabel{Fig.Context3}{{4}{8}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Eval of Lena.}}{8}}
-\@writefile{lof}{\contentsline {subfigure}{\numberline{(a)}{\ignorespaces {}}}{8}}
-\@writefile{lof}{\contentsline {subfigure}{\numberline{(b)}{\ignorespaces {}}}{8}}
-\newlabel{Fig.Eval}{{5}{8}}
-\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces Eval of Lena.}}{9}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Context pixels of $x$ by Extended PPVO.}}{7}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(a)}{\ignorespaces {$C_1$ of $n = 4$}}}{7}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(b)}{\ignorespaces {$C_2$ of $n = 10$}}}{7}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(c)}{\ignorespaces {$C_3$ of $n = 18$}}}{7}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(d)}{\ignorespaces {$C_4$ of $n = 24$}}}{7}}
+\newlabel{Fig.Context3}{{4}{7}}
+\newlabel{eq:thresholds}{{8}{8}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Eval of Lena.}}{9}}
 \@writefile{lof}{\contentsline {subfigure}{\numberline{(a)}{\ignorespaces {}}}{9}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(b)}{\ignorespaces {}}}{9}}
+\newlabel{Fig.Eval}{{5}{9}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces Eval of Lena.}}{9}}
 \newlabel{Fig.Eval0}{{6}{9}}
 \@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces Example.}}{10}}
 \newlabel{Fig.EmbedExample}{{7}{10}}
-\newlabel{eq:thresholds}{{6}{10}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.3}Data Embedding and Extraction Procedures}{10}}
-\newlabel{sec:3.3}{{3.3}{10}}
-\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces Thresholds.}}{11}}
-\newlabel{Fig.Thresholds}{{8}{11}}
+\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces Thresholds.}}{10}}
+\newlabel{Fig.Thresholds}{{8}{10}}
 \@writefile{lof}{\contentsline {figure}{\numberline {9}{\ignorespaces size.}}{11}}
 \newlabel{fig:size}{{9}{11}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3}Data Embedding and Extraction Procedures}{11}}
+\newlabel{sec:3.3}{{3.3}{11}}
 \citation{Peng2014IPVO}
 \citation{Ou2014PVOk}
 \citation{Qu2015PPVO}
 \citation{Peng2014IPVO}
 \citation{Li2013PVO}
 \citation{Qu2015PPVO}
+\citation{Qu2015PPVO}
+\citation{Peng2014IPVO}
+\citation{Ou2014PVOk}
+\citation{Qu2015PPVO}
+\citation{Peng2014IPVO}
+\citation{Ou2014PVOk}
+\citation{Qu2015PPVO}
+\citation{Peng2014IPVO}
+\citation{Ou2014PVOk}
+\citation{Qu2015PPVO}
+\citation{Peng2014IPVO}
+\citation{Ou2014PVOk}
+\citation{Qu2015PPVO}
 \@writefile{toc}{\contentsline {section}{\numberline {4}Experimental Results}{12}}
 \newlabel{sec:4}{{4}{12}}
-\citation{Qu2015PPVO}
-\citation{Peng2014IPVO}
-\citation{Ou2014PVOk}
-\citation{Qu2015PPVO}
-\citation{Peng2014IPVO}
-\citation{Ou2014PVOk}
-\citation{Qu2015PPVO}
-\citation{Peng2014IPVO}
-\citation{Ou2014PVOk}
-\citation{Qu2015PPVO}
-\citation{Peng2014IPVO}
-\citation{Ou2014PVOk}
-\citation{Qu2015PPVO}
-\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Comparison of PSNR (dB) among the proposed method and the PVO-based methods of Peng \emph  {et al.} \cite  {Peng2014IPVO}, Ou \emph  {et al.} \cite  {Ou2014PVOk} and Qu \emph  {et al.} \cite  {Qu2015PPVO}. The embedding capacity is 10,000 bits.}}{13}}
-\newlabel{tab:10000bits}{{1}{13}}
-\@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces Comparison of PSNR (dB) among the proposed method and the PVO-based methods of Peng \emph  {et al.} \cite  {Peng2014IPVO}, Ou \emph  {et al.} \cite  {Ou2014PVOk} and Qu \emph  {et al.} \cite  {Qu2015PPVO}. The embedding capacity is 20,000 bits.}}{13}}
-\newlabel{tab:20000bits}{{2}{13}}
-\@writefile{lof}{\contentsline {figure}{\numberline {10}{\ignorespaces capacity.}}{14}}
-\newlabel{fig:capacity}{{10}{14}}
+\@writefile{lof}{\contentsline {figure}{\numberline {10}{\ignorespaces capacity.}}{13}}
+\newlabel{fig:capacity}{{10}{13}}
 \bibstyle{elsarticle-num}
 \bibdata{Cited}
 \bibcite{Tian2003DE}{{1}{}{{}}{{}}}
 \bibcite{Qin2013An}{{2}{}{{}}{{}}}
 \bibcite{Thodi2007Expansion}{{3}{}{{}}{{}}}
 \bibcite{Hu2009DE}{{4}{}{{}}{{}}}
+\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Comparison of PSNR (dB) among the proposed method and the PVO-based methods of Peng \emph  {et al.} \cite  {Peng2014IPVO}, Ou \emph  {et al.} \cite  {Ou2014PVOk} and Qu \emph  {et al.} \cite  {Qu2015PPVO}. The embedding capacity is 10,000 bits. The optimal parameters of the proposed method are also listed.}}{14}}
+\newlabel{tab:10000bits}{{1}{14}}
+\@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces Comparison of PSNR (dB) among the proposed method and the PVO-based methods of Peng \emph  {et al.} \cite  {Peng2014IPVO}, Ou \emph  {et al.} \cite  {Ou2014PVOk} and Qu \emph  {et al.} \cite  {Qu2015PPVO}. The embedding capacity is 20,000 bits. The optimal parameters of the proposed method are also listed.}}{14}}
+\newlabel{tab:20000bits}{{2}{14}}
+\@writefile{toc}{\contentsline {section}{\numberline {5}Conclusion}{14}}
+\newlabel{sec:5}{{5}{14}}
 \bibcite{Li2013A}{{5}{}{{}}{{}}}
 \bibcite{Hong2009Reversible}{{6}{}{{}}{{}}}
 \bibcite{Hong2010A}{{7}{}{{}}{{}}}
@@ -134,8 +137,6 @@
 \bibcite{Wu2012Reversible}{{15}{}{{}}{{}}}
 \bibcite{Ou2013Pairwise}{{16}{}{{}}{{}}}
 \bibcite{Dragoi2014Local}{{17}{}{{}}{{}}}
-\@writefile{toc}{\contentsline {section}{\numberline {5}Conclusion}{15}}
-\newlabel{sec:5}{{5}{15}}
 \bibcite{Li2015Efficient}{{18}{}{{}}{{}}}
 \bibcite{Dragoi2016Adaptive}{{19}{}{{}}{{}}}
 \bibcite{Wang2017Rate}{{20}{}{{}}{{}}}

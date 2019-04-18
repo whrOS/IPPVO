@@ -276,12 +276,16 @@ h2 = cell(1,Tmax);
 h3 = cell(1,Tmax);
 h4 = cell(1,Tmax);
 h = cell(1,Tmax);
+hmax = cell(1,Tmax);
+hmin = cell(1,Tmax);
 for i = 1 : Tmax
     h1{i} = zeros(1,256);
     h2{i} = zeros(1,256);
     h3{i} = zeros(1,256);
     h4{i} = zeros(1,256);
     h{i} = zeros(1,512);
+    hmax{i} = zeros(1,512);
+    hmin{i} = zeros(1,512);
 end
 
 NL = zeros(A-3,B-3);
@@ -413,6 +417,7 @@ for i = 1:(A-3)
             if I(i,j) >= Y(end)
                 dmax = I(i,j) - Y(end); % >= 0
                 h4{T+1}(dmax+1) = h4{T+1}(dmax+1) + 1;
+                hmax{T+1}(dmax+1) = hmax{T+1}(dmax+1) + 1;
                 h{T+1}(dmax+256) = h{T+1}(dmax+256) + 1;
             end
             % dmin
@@ -420,6 +425,7 @@ for i = 1:(A-3)
                 dmin = Y(1) - I(i,j); % >= 0
                 h4{T+1}(dmin+1) = h4{T+1}(dmin+1) + 1;
                 dmin = I(i,j) - Y(1); % >= 0
+                hmin{T+1}(dmin+256) = hmin{T+1}(dmin+256) + 1;
                 h{T+1}(dmin+256) = h{T+1}(dmin+256) + 1;
             end
         else % Y(end) == Y(1)
@@ -427,6 +433,7 @@ for i = 1:(A-3)
                 if I(i,j) == 254
                     dmin = I(i,j) - Y(end);
                     h4{T+1}(dmin+1) = h4{T+1}(dmin+1) + 1;
+                    hmax{T+1}(dmin+1) = hmax{T+1}(dmin+1) + 1;
                     h{T+1}(dmin+256) = h{T+1}(dmin+256) + 1;
                 end
             else
@@ -434,6 +441,7 @@ for i = 1:(A-3)
                     dmin = Y(1) - I(i,j); % >= 0
                     h4{T+1}(dmin+1) = h4{T+1}(dmin+1) + 1;
                     dmax = I(i,j) - Y(1);
+                    hmin{T+1}(dmax+256) = hmin{T+1}(dmax+256) + 1;
                     h{T+1}(dmin+256) = h{T+1}(dmin+256) + 1;
                 else % I(i,j) > Y(end)
                     dmax = I(i,j) - Y(1) - 1; % >= 0
@@ -491,10 +499,13 @@ for i = 2 : 1 : Tmax
     d4(i) = 0.5*h4{i}(1) + sum(h4{i}(2:end));
     
     h{i} = h{i} + h{i-1};
+    hmax{i} = hmax{i} + hmax{i-1};
+    hmin{i} = hmin{i} + hmin{i-1};
 end
 %%
 bar(h{end})
-set(gca,'xticklabel',{'-11','-10','-9','-8','-7','-6','-5','-4','-3','-2','-1','0','1','2','3','4','5','6','7','8','9','10'});
+bar(hmax{end})
+bar(hmin{end})
 
 %% 2.2ͼʾ
 i=4;

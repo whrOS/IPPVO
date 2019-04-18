@@ -1,0 +1,172 @@
+\begin{thebibliography}{10}
+\expandafter\ifx\csname url\endcsname\relax
+  \def\url#1{\texttt{#1}}\fi
+\expandafter\ifx\csname urlprefix\endcsname\relax\def\urlprefix{URL }\fi
+\expandafter\ifx\csname href\endcsname\relax
+  \def\href#1#2{#2} \def\path#1{#1}\fi
+
+\bibitem{IJcox}
+J.~B.~C. I.J.~Cox, M.L.~Miller, Digital watermarking.
+
+\bibitem{Fridrich}
+J.~Fridrich, Steganography in digital media.
+
+\bibitem{shi}
+Y.~Q. {Shi}, X.~{Li}, X.~{Zhang}, H.~{Wu}, B.~{Ma}, Reversible data hiding:
+  Advances in the past two decades, IEEE Access 4 (2016) 3210--3237.
+
+\bibitem{Tian2003DE}
+J.~Tian, Reversible data embedding using a difference expansion, IEEE Trans.
+  Circuits Syst. Video Technol. 13~(8) (2003) 890--896.
+
+\bibitem{Qin2013An}
+C.~Qin, C.~C. Chang, Y.~H. Huang, L.~T. Liao, An inpainting-assisted reversible
+  steganographic scheme using a histogram shifting mechanism, IEEE Trans.
+  Circuits Syst. Video Technol. 23~(7) (2013) 1109--1118.
+
+\bibitem{Thodi2007Expansion}
+D.~M. Thodi, J.~J. Rodr��guez, Expansion embedding techniques for
+  reversible watermarking, IEEE Trans. Image Process. 16~(3) (2007) 721--730.
+
+\bibitem{Hu2009DE}
+Y.~Hu, H.~K. Lee, J.~Li, De-based reversible data hiding with improved overflow
+  location map, IEEE Trans. Circuits Syst. Video Technol. 19~(2) (2009)
+  250--260.
+
+\bibitem{Li2013A}
+X.~Li, W.~Zhang, X.~Gui, B.~Yang, A novel reversible data hiding scheme based
+  on two-dimensional difference-histogram modification, IEEE Trans. Inf.
+  Forens. Secur. 8~(7) (2013) 1091--1100.
+
+\bibitem{Hong2009Reversible}
+W.~Hong, T.~S. Chen, C.~W. Shiu, Reversible data hiding for high quality images
+  using modification of prediction errors, J. Syst. Softw. 82~(11) (2009)
+  1833--1842.
+
+\bibitem{Hong2010A}
+W.~Hong, T.~S. Chen, Y.~P. Chang, C.~W. Shiu, A high capacity reversible data
+  hiding scheme using orthogonal projection and prediction error modification,
+  Signal Process. 90~(11) (2010) 2911--2922.
+
+\bibitem{Xiaolong2013General}
+X.~Li, B.~Li, B.~Yang, T.~Zeng, General framework to histogram-shifting-based
+  reversible data hiding, IEEE Trans. Image Process. 22~(6) (2013) 2181--2191.
+
+\bibitem{Wang2018A}
+W.~Wang, J.~Ye, T.~Wang, W.~Wang, A high capacity reversible data hiding scheme
+  based on right-left shift, Signal Process.
+
+\bibitem{Sachnev2009Reversible}
+V.~Sachnev, H.~J. Kim, J.~Nam, S.~Suresh, Y.~Q. Shi, Reversible watermarking
+  algorithm using sorting and prediction, IEEE Trans. Circuits Syst. Video
+  Technol. 19~(7) (2009) 989--999.
+
+\bibitem{Tsai2009Reversible}
+P.~Tsai, Y.~C. Hu, H.~L. Yeh, Reversible image hiding scheme using predictive
+  coding and histogram shifting, Signal Process. 89~(6) (2009) 1129--1143.
+
+\bibitem{Gao2011Lossless}
+X.~Gao, L.~An, Y.~Yuan, D.~Tao, X.~Li, Lossless data embedding using
+  generalized statistical quantity histogram, IEEE Trans. Circuits Syst. Video
+  Technol. 21~(8) (2011) 1061--1070.
+
+\bibitem{Li2011Efficient}
+X.~Li, B.~Yang, T.~Zeng, Efficient reversible watermarking based on adaptive
+  prediction-error expansion and pixel selection, IEEE Trans. Image Process.
+  20~(12) (2011) 3524--3533.
+
+\bibitem{Hong2011Adaptive}
+W.~Hong, Adaptive reversible data hiding method based on error energy control
+  and histogram shifting, Opt. Commun. 285~(2) (2012) 101--108.
+
+\bibitem{Wu2012Reversible}
+H.~T. Wu, J.~Huang, Reversible image watermarking on prediction errors by
+  efficient histogram modification, Signal Process. 92~(12) (2012) 3000--3009.
+
+\bibitem{Ou2013Pairwise}
+B.~Ou, X.~Li, Y.~Zhao, R.~Ni, Y.~Q. Shi, Pairwise prediction-error expansion
+  for efficient reversible data hiding, IEEE Trans. Image Process. 22~(12)
+  (2013) 5010--5021.
+
+\bibitem{Dragoi2014Local}
+I.~C. Dragoi, D.~Coltuc, Local-prediction-based difference expansion reversible
+  watermarking, IEEE Trans. Image Process. 23~(4) (2014) 1779.
+
+\bibitem{Li2015Efficient}
+X.~Li, W.~Zhang, X.~Gui, B.~Yang, Efficient reversible data hiding based on
+  multiple histograms modification, IEEE Trans. Inf. Forens. Secur. 10~(9)
+  (2015) 2016--2027.
+
+\bibitem{Dragoi2016Adaptive}
+I.~C. Dragoi, D.~Coltuc, Adaptive pairing reversible watermarking, IEEE Trans.
+  Image Process. 25~(5) (2016) 2420--2422.
+
+\bibitem{Wang2017Rate}
+J.~Wang, J.~Ni, X.~Zhang, Y.~Q. Shi, Rate and distortion optimization for
+  reversible data hiding using multiple histogram shifting, IEEE Trans. Cybern.
+  47~(2) (2017) 315--326.
+
+\bibitem{hs1}
+Z.~{Ni}, Y.~Q. {Shi}, N.~{Ansari}, W.~{Su}, Reversible data hiding, IEEE Trans.
+  Circuits Syst. Video Technol. 16~(3) (2006) 354--362.
+
+\bibitem{Fallahpour2008Reversible}
+M.~Fallahpour, Reversible image data hiding based on gradient adjusted
+  prediction, IEICE Electron Exp. 5~(20) (2008) 870--876.
+
+\bibitem{Ioan2014Local}
+D.~Ioan-Catalin, C.~Dinu, Local-prediction-based difference expansion
+  reversible watermarking, IEEE Trans. Image Process. 23~(4) (2014) 1779.
+
+\bibitem{Ioan2015On}
+D.~Ioan-Catalin, C.~Dinu, On local prediction based reversible watermarking,
+  IEEE Trans. Image Process. 24~(4) (2015) 1244--1246.
+
+\bibitem{Xiang2015A}
+X.~Wang, J.~Ding, Q.~Pei, A novel reversible image data hiding scheme based on
+  pixel value ordering and dynamic pixel block partition, Information Sciences.
+  310 (2015) 16--35.
+
+\bibitem{Bo2016Improved}
+B.~Ou, X.~Li, J.~Wang, Improved pvo-based reversible data hiding: A new
+  implementation based on multiple histograms modification, J. Vis. Commun.
+  Image Represent. 38 (2016) 328--339.
+
+\bibitem{Li2013PVO}
+X.~Li, J.~Li, B.~Li, B.~Yang, High-fidelity reversible data hiding scheme based
+  on pixel-value-ordering and prediction-error expansion, Signal Process.
+  93~(1) (2013) 198--205.
+
+\bibitem{Peng2014IPVO}
+F.~Peng, X.~Li, B.~Yang, Improved pvo-based reversible data hiding, Digit.
+  Signal Process. 25~(2) (2014) 255--265.
+
+\bibitem{Ou2014PVOk}
+B.~Ou, X.~Li, Y.~Zhao, R.~Ni, Reversible data hiding using invariant
+  pixel-value-ordering and prediction-error expansion, Signal Process.: Image
+  Commun. 29~(7) (2014) 760--772.
+
+\bibitem{Qu2015PPVO}
+X.~Qu, H.~J. Kim, Pixel-based pixel value ordering predictor for high-fidelity
+  reversible data hiding, Signal Process. 111 (2015) 249--260.
+
+\bibitem{Weng2016Reversible}
+S.~Weng, Y.~Liu, J.~S. Pan, N.~Cai, Reversible data hiding based on flexible
+  block-partition and adaptive block-modification strategy, J. Vis. Commun.
+  Image Represent. 41 (2016) S104732031630205X.
+
+\bibitem{Weng2017Optimal}
+S.~Weng, G.~Zhang, J.~S. Pan, Z.~Zhou, Optimal ppvo-based reversible data
+  hiding, J. Vis. Commun. Image Represent. 48 (2017) S1047320317301062.
+
+\bibitem{He2018Reversible}
+W.~He, G.~Xiong, S.~Weng, Z.~Cai, Y.~Wang, Reversible data hiding using
+  multi-pass pixel-value-ordering and pairwise prediction-error expansion,
+  Information Sciences. 49.
+
+\bibitem{Kim2018Skewed}
+S.~Kim, X.~Qu, V.~Sachnev, H.~J. Kim, Skewed histogram shifting for reversible
+  data hiding using a pair of extreme predictions, IEEE Trans. Circuits Syst.
+  Video Technol.
+
+\end{thebibliography}

@@ -1,0 +1,9 @@
+This is BibTeX, Version 0.99dThe top-level auxiliary file: sigpro.aux
+The style file: elsarticle-num.bst
+Database file #1: Cited.bib
+Warning--I didn't find a database entry for ""
+Too many commas in name 1 of "I.J. Cox, M.L. Miller, J.A. Bloom, C.Honsinger" for entry IJcox
+while executing---line 1495 of file elsarticle-num.bst
+Warning--empty journal in IJcox
+Warning--empty journal in Fridrich
+(There was 1 error message)

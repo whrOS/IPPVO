@@ -1,0 +1,668 @@
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2018.11.30)  9 APR 2019 21:22
+entering extended mode
+**E:/可逆/昊锐_SP/sigpro.tex
+(E:/可逆/昊锐_SP/sigpro.tex
+LaTeX2e <2011/06/27>
+Babel <v3.8m> and hyphenation patterns for loaded.
+(E:\可逆\昊锐_SP\elsarticle.cls
+Document Class: elsarticle 2009/09/17, 1.20b: Elsevier Ltd
+\@bls=\dimen102
+(D:\Ctex\MiKTeX\tex\latex\base\article.cls
+Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
+(D:\Ctex\MiKTeX\tex\latex\base\size10.clo
+File: size10.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen103
+)
+(D:\Ctex\MiKTeX\tex\latex\graphics\graphicx.sty
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+(D:\Ctex\MiKTeX\tex\latex\graphics\keyval.sty
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+(D:\Ctex\MiKTeX\tex\latex\graphics\graphics.sty
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+(D:\Ctex\MiKTeX\tex\latex\graphics\trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+(D:\Ctex\MiKTeX\tex\latex\00miktex\graphics.cfg
+File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
+)
+Package graphics Info: Driver file: pdftex.def on input line 91.
+
+(D:\Ctex\MiKTeX\tex\latex\pdftex-def\pdftex.def
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+
+(D:\Ctex\MiKTeX\tex\generic\oberdiek\infwarerr.sty
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/message (HO)
+)
+(D:\Ctex\MiKTeX\tex\generic\oberdiek\ltxcmds.sty
+Package: ltxcmds 2011/04/18 v1.20 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count87
+))
+\Gin@req@height=\dimen104
+\Gin@req@width=\dimen105
+)
+(D:\Ctex\MiKTeX\tex\latex\psnfss\pifont.sty
+Package: pifont 2005/04/12 PSNFSS-v9.2a Pi font support (SPQR) 
+LaTeX Font Info:    Try loading font information for U+pzd on input line 63.
+
+(D:\Ctex\MiKTeX\tex\latex\psnfss\upzd.fd
+File: upzd.fd 2001/06/04 font definitions for U/pzd.
+)
+LaTeX Font Info:    Try loading font information for U+psy on input line 64.
+
+(D:\Ctex\MiKTeX\tex\latex\psnfss\upsy.fd
+File: upsy.fd 2001/06/04 font definitions for U/psy.
+))
+\c@tnote=\count88
+\c@fnote=\count89
+\c@cnote=\count90
+\c@ead=\count91
+\c@author=\count92
+\@eadauthor=\toks15
+\c@affn=\count93
+\absbox=\box26
+\keybox=\box27
+\Columnwidth=\dimen106
+\space@left=\dimen107
+\els@boxa=\box28
+\els@boxb=\box29
+\leftMargin=\dimen108
+\@enLab=\toks16
+\@sep=\skip43
+\@@sep=\skip44
+ (E:\可逆\昊锐_SP\sigpro.spl)
+(D:\Ctex\MiKTeX\tex\latex\natbib\natbib.sty
+Package: natbib 2010/09/13 8.31b (PWD, AO)
+\bibhang=\skip45
+\bibsep=\skip46
+LaTeX Info: Redefining \cite on input line 694.
+\c@NAT@ctr=\count94
+)
+\splwrite=\write3
+
+(D:\Ctex\MiKTeX\tex\latex\geometry\geometry.sty
+Package: geometry 2010/09/12 v5.6 Page Geometry
+
+(D:\Ctex\MiKTeX\tex\generic\oberdiek\ifpdf.sty
+Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in PDF mode is detected.
+)
+(D:\Ctex\MiKTeX\tex\generic\oberdiek\ifvtex.sty
+Package: ifvtex 2010/03/01 v1.5 Switches for detecting VTeX and its modes (HO)
+Package ifvtex Info: VTeX not detected.
+)
+(D:\Ctex\MiKTeX\tex\generic\ifxetex\ifxetex.sty
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+\Gm@cnth=\count95
+\Gm@cntv=\count96
+\c@Gm@tempcnt=\count97
+\Gm@bindingoffset=\dimen109
+\Gm@wd@mp=\dimen110
+\Gm@odd@mp=\dimen111
+\Gm@even@mp=\dimen112
+\Gm@layoutwidth=\dimen113
+\Gm@layoutheight=\dimen114
+\Gm@layouthoffset=\dimen115
+\Gm@layoutvoffset=\dimen116
+\Gm@dimlist=\toks17
+
+(D:\Ctex\MiKTeX\tex\latex\geometry\geometry.cfg))
+\appnamewidth=\dimen117
+)
+(D:\Ctex\MiKTeX\tex\latex\amsfonts\amsfonts.sty
+Package: amsfonts 2009/06/22 v3.00 Basic AMSFonts support
+\@emptytoks=\toks18
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 96.
+)
+(D:\Ctex\MiKTeX\tex\latex\ams\math\amsmath.sty
+Package: amsmath 2000/07/18 v2.13 AMS math features
+\@mathmargin=\skip47
+
+For additional information on amsmath, use the `?' option.
+(D:\Ctex\MiKTeX\tex\latex\ams\math\amstext.sty
+Package: amstext 2000/06/29 v2.01
+
+(D:\Ctex\MiKTeX\tex\latex\ams\math\amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0
+\@emptytoks=\toks19
+\ex@=\dimen118
+))
+(D:\Ctex\MiKTeX\tex\latex\ams\math\amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d
+\pmbraise@=\dimen119
+)
+(D:\Ctex\MiKTeX\tex\latex\ams\math\amsopn.sty
+Package: amsopn 1999/12/14 v2.01 operator names
+)
+\inf@bad=\count98
+LaTeX Info: Redefining \frac on input line 211.
+\uproot@=\count99
+\leftroot@=\count100
+LaTeX Info: Redefining \overline on input line 307.
+\classnum@=\count101
+\DOTSCASE@=\count102
+LaTeX Info: Redefining \ldots on input line 379.
+LaTeX Info: Redefining \dots on input line 382.
+LaTeX Info: Redefining \cdots on input line 467.
+\Mathstrutbox@=\box30
+\strutbox@=\box31
+\big@size=\dimen120
+LaTeX Font Info:    Redeclaring font encoding OML on input line 567.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 568.
+\macc@depth=\count103
+\c@MaxMatrixCols=\count104
+\dotsspace@=\muskip10
+\c@parentequation=\count105
+\dspbrk@lvl=\count106
+\tag@help=\toks20
+\row@=\count107
+\column@=\count108
+\maxfields@=\count109
+\andhelp@=\toks21
+\eqnshift@=\dimen121
+\alignsep@=\dimen122
+\tagshift@=\dimen123
+\tagwidth@=\dimen124
+\totwidth@=\dimen125
+\lineht@=\dimen126
+\@envbody=\toks22
+\multlinegap=\skip48
+\multlinetaggap=\skip49
+\mathdisplay@stack=\toks23
+LaTeX Info: Redefining \[ on input line 2666.
+LaTeX Info: Redefining \] on input line 2667.
+)
+(D:\Ctex\MiKTeX\tex\latex\amsfonts\amssymb.sty
+Package: amssymb 2009/06/22 v3.00
+)
+(D:\Ctex\MiKTeX\tex\latex\dstroke\dsfont.sty
+Package: dsfont 1995/08/01 v0.1 Double stroke roman fonts
+)
+(D:\Ctex\MiKTeX\tex\latex\graphics\color.sty
+Package: color 2005/11/14 v1.0j Standard LaTeX Color (DPC)
+
+(D:\Ctex\MiKTeX\tex\latex\00miktex\color.cfg
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package color Info: Driver file: pdftex.def on input line 130.
+)
+(D:\Ctex\MiKTeX\tex\latex\multirow\multirow.sty
+\bigstrutjot=\dimen127
+)
+(D:\Ctex\MiKTeX\tex\latex\oberdiek\epstopdf.sty
+Package: epstopdf 2010/02/09 v2.5 Conversion with epstopdf on the fly (HO)
+
+(D:\Ctex\MiKTeX\tex\latex\oberdiek\epstopdf-base.sty
+Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
+
+(D:\Ctex\MiKTeX\tex\latex\oberdiek\grfext.sty
+Package: grfext 2010/08/19 v1.1 Managing graphics extensions (HO)
+
+(D:\Ctex\MiKTeX\tex\generic\oberdiek\kvdefinekeys.sty
+Package: kvdefinekeys 2011/04/07 v1.3 Defining keys (HO)
+))
+(D:\Ctex\MiKTeX\tex\latex\oberdiek\kvoptions.sty
+Package: kvoptions 2010/12/23 v3.10 Keyval support for LaTeX options (HO)
+
+(D:\Ctex\MiKTeX\tex\generic\oberdiek\kvsetkeys.sty
+Package: kvsetkeys 2011/04/07 v1.13 Key value parser (HO)
+
+(D:\Ctex\MiKTeX\tex\generic\oberdiek\etexcmds.sty
+Package: etexcmds 2011/02/16 v1.5 Prefix for e-TeX command names (HO)
+
+(D:\Ctex\MiKTeX\tex\generic\oberdiek\ifluatex.sty
+Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)))
+(D:\Ctex\MiKTeX\tex\generic\oberdiek\pdftexcmds.sty
+Package: pdftexcmds 2011/04/22 v0.16 Utilities of pdfTeX for LuaTeX (HO)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+Package grfext Info: Graphics extension search list:
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 452.
+))
+(D:\Ctex\MiKTeX\tex\latex\subfigure\subfigure.sty
+Package: subfigure 2002/07/30 v2.1.4 subfigure package
+\subfigtopskip=\skip50
+\subfigcapskip=\skip51
+\subfigcaptopadj=\dimen128
+\subfigbottomskip=\skip52
+\subfigcapmargin=\dimen129
+\subfiglabelskip=\skip53
+\c@subfigure=\count110
+\c@lofdepth=\count111
+\c@subtable=\count112
+\c@lotdepth=\count113
+
+****************************************
+* Local config file subfigure.cfg used *
+****************************************
+(D:\Ctex\MiKTeX\tex\latex\subfigure\subfigure.cfg)
+\subfig@top=\skip54
+\subfig@bottom=\skip55
+)
+(E:\可逆\昊锐_SP\sigpro.aux)
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+ (D:\Ctex\MiKTeX\tex\context\base\supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count114
+\scratchdimen=\dimen130
+\scratchbox=\box32
+\nofMPsegments=\count115
+\nofMParguments=\count116
+\everyMPshowfont=\toks24
+\MPscratchCnt=\count117
+\MPscratchDim=\dimen131
+\MPnumerator=\count118
+\makeMPintoPDFobject=\count119
+\everyMPtoPDFconversion=\toks25
+)
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: custom
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* hratio: 1:1
+* vratio: 1:1
+* modes: 
+* h-part:(L,W,R)=(64.75394pt, 468.0pt, 64.75394pt)
+* v-part:(T,H,B)=(111.52342pt, 622.0pt, 111.52342pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=468.0pt
+* \textheight=622.0pt
+* \oddsidemargin=-7.51605pt
+* \evensidemargin=-7.51605pt
+* \topmargin=-22.74657pt
+* \headheight=50.0pt
+* \headsep=12.0pt
+* \topskip=10.0pt
+* \footskip=18.0pt
+* \marginparwidth=65.0pt
+* \marginparsep=11.0pt
+* \columnsep=24.0pt
+* \skip\footins=24.0pt plus 2.0pt minus 12.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+LaTeX Font Info:    Try loading font information for U+msa on input line 47.
+(D:\Ctex\MiKTeX\tex\latex\amsfonts\umsa.fd
+File: umsa.fd 2009/06/22 v3.00 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 47.
+
+(D:\Ctex\MiKTeX\tex\latex\amsfonts\umsb.fd
+File: umsb.fd 2009/06/22 v3.00 AMS symbols B
+) [1
+
+{D:/Ctex/UserData/pdftex/config/pdftex.map{Unicode.sfd}{UGBK.sfd}}] [2]
+
+pdfTeX warning: pdflatex.exe (file E:/可逆/昊锐_SP/figures/PPVOContext.pdf)
+: PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<figures/PPVOContext.pdf, id=19, 232.92119pt x 232.78467pt>
+File: figures/PPVOContext.pdf Graphic file (type pdf)
+
+<use figures/PPVOContext.pdf>
+Package pdftex.def Info: figures/PPVOContext.pdf used on input line 123.
+(pdftex.def)             Requested size: 140.40143pt x 140.32544pt.
+
+<figures/PPVO_Lena_CN15_hist_PN.pdf, id=20, 563.0882pt x 421.21164pt>
+File: figures/PPVO_Lena_CN15_hist_PN.pdf Graphic file (type pdf)
+
+<use figures/PPVO_Lena_CN15_hist_PN.pdf>
+Package pdftex.def Info: figures/PPVO_Lena_CN15_hist_PN.pdf used on input line 
+130.
+(pdftex.def)             Requested size: 196.55914pt x 147.03421pt.
+ [3 <E:/可逆/昊锐_SP/figures/PPVOContext.pdf> <E:/可逆/昊锐_SP/figures/
+PPVO_Lena_CN15_hist_PN.pdf>] [4]
+
+pdfTeX warning: pdflatex.exe (file E:/可逆/昊锐_SP/figures/CN4a.pdf): PDF i
+nclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<figures/CN4a.pdf, id=45, 234.59645pt x 120.0525pt>
+File: figures/CN4a.pdf Graphic file (type pdf)
+ <use figures/CN4a.pdf>
+Package pdftex.def Info: figures/CN4a.pdf used on input line 221.
+(pdftex.def)             Requested size: 93.59857pt x 47.8974pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 221--221
+[]\OT1/cmss/m/n/10 (a) \OT1/cmr/m/n/10 P-P-VO pre-dic-tor
+ []
+
+
+
+pdfTeX warning: pdflatex.exe (file E:/可逆/昊锐_SP/figures/CN4b.pdf): PDF i
+nclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<figures/CN4b.pdf, id=46, 234.59645pt x 120.0525pt>
+File: figures/CN4b.pdf Graphic file (type pdf)
+ <use figures/CN4b.pdf>
+Package pdftex.def Info: figures/CN4b.pdf used on input line 228.
+(pdftex.def)             Requested size: 93.59857pt x 47.8974pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 228--228
+[]\OT1/cmss/m/n/10 (b) \OT1/cmr/m/n/10 Ex-tend-ed P-P-VO
+ []
+
+
+
+pdfTeX warning: pdflatex.exe (file E:/可逆/昊锐_SP/figures/CN8a.pdf): PDF i
+nclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<figures/CN8a.pdf, id=47, 291.04434pt x 176.95811pt>
+File: figures/CN8a.pdf Graphic file (type pdf)
+ <use figures/CN8a.pdf>
+Package pdftex.def Info: figures/CN8a.pdf used on input line 235.
+(pdftex.def)             Requested size: 93.59857pt x 56.90855pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 235--235
+[]\OT1/cmss/m/n/10 (c) \OT1/cmr/m/n/10 P-P-VO pre-dic-tor
+ []
+
+
+
+pdfTeX warning: pdflatex.exe (file E:/可逆/昊锐_SP/figures/CN8b.pdf): PDF i
+nclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<figures/CN8b.pdf, id=48, 291.04735pt x 176.95811pt>
+File: figures/CN8b.pdf Graphic file (type pdf)
+ <use figures/CN8b.pdf>
+Package pdftex.def Info: figures/CN8b.pdf used on input line 242.
+(pdftex.def)             Requested size: 93.59857pt x 56.90855pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 242--242
+[]\OT1/cmss/m/n/10 (d) \OT1/cmr/m/n/10 Ex-tend-ed P-P-VO
+ []
+
+[5 <E:/可逆/昊锐_SP/figures/CN4a.pdf> <E:/可逆/昊锐_SP/figures/CN4b.pdf
+> <E:/可逆/昊锐_SP/figures/CN8a.pdf> <E:/可逆/昊锐_SP/figures/CN8b.pdf>
+] <figures/Comparison/4Pixels/lena1.pdf, id=89, 437.89558pt x 358.61578pt>
+File: figures/Comparison/4Pixels/lena1.pdf Graphic file (type pdf)
+
+<use figures/Comparison/4Pixels/lena1.pdf>
+Package pdftex.def Info: figures/Comparison/4Pixels/lena1.pdf used on input lin
+e 263.
+(pdftex.def)             Requested size: 187.19714pt x 153.30437pt.
+
+<figures/Comparison/4Pixels/baboon1.pdf, id=90, 437.89558pt x 358.61578pt>
+File: figures/Comparison/4Pixels/baboon1.pdf Graphic file (type pdf)
+
+<use figures/Comparison/4Pixels/baboon1.pdf>
+Package pdftex.def Info: figures/Comparison/4Pixels/baboon1.pdf used on input l
+ine 270.
+(pdftex.def)             Requested size: 187.19714pt x 153.30437pt.
+
+<figures/Comparison/8Pixels/lena1.pdf, id=91, 437.89558pt x 358.61578pt>
+File: figures/Comparison/8Pixels/lena1.pdf Graphic file (type pdf)
+
+<use figures/Comparison/8Pixels/lena1.pdf>
+Package pdftex.def Info: figures/Comparison/8Pixels/lena1.pdf used on input lin
+e 278.
+(pdftex.def)             Requested size: 187.19714pt x 153.30437pt.
+
+<figures/Comparison/8Pixels/baboon1.pdf, id=92, 437.89558pt x 358.61578pt>
+File: figures/Comparison/8Pixels/baboon1.pdf Graphic file (type pdf)
+
+<use figures/Comparison/8Pixels/baboon1.pdf>
+Package pdftex.def Info: figures/Comparison/8Pixels/baboon1.pdf used on input l
+ine 285.
+(pdftex.def)             Requested size: 187.19714pt x 153.30437pt.
+
+
+pdfTeX warning: pdflatex.exe (file E:/可逆/昊锐_SP/figures/C1.pdf): PDF inc
+lusion: found PDF version <1.7>, but at most version <1.5> allowed
+<figures/C1.pdf, id=93, 401.29924pt x 230.99098pt>
+File: figures/C1.pdf Graphic file (type pdf)
+ <use figures/C1.pdf>
+Package pdftex.def Info: figures/C1.pdf used on input line 302.
+(pdftex.def)             Requested size: 102.02509pt x 58.72392pt.
+
+
+pdfTeX warning: pdflatex.exe (file E:/可逆/昊锐_SP/figures/C2.pdf): PDF inc
+lusion: found PDF version <1.7>, but at most version <1.5> allowed
+<figures/C2.pdf, id=94, 401.29924pt x 233.86372pt>
+File: figures/C2.pdf Graphic file (type pdf)
+ <use figures/C2.pdf>
+Package pdftex.def Info: figures/C2.pdf used on input line 308.
+(pdftex.def)             Requested size: 102.02509pt x 59.45424pt.
+
+
+pdfTeX warning: pdflatex.exe (file E:/可逆/昊锐_SP/figures/C4.pdf): PDF inc
+lusion: found PDF version <1.7>, but at most version <1.5> allowed
+<figures/C4.pdf, id=95, 401.29924pt x 233.86372pt>
+File: figures/C4.pdf Graphic file (type pdf)
+ <use figures/C4.pdf>
+Package pdftex.def Info: figures/C4.pdf used on input line 314.
+(pdftex.def)             Requested size: 102.02509pt x 59.45424pt.
+
+
+pdfTeX warning: pdflatex.exe (file E:/可逆/昊锐_SP/figures/C3.pdf): PDF inc
+lusion: found PDF version <1.7>, but at most version <1.5> allowed
+<figures/C3.pdf, id=96, 401.15872pt x 233.86372pt>
+File: figures/C3.pdf Graphic file (type pdf)
+ <use figures/C3.pdf>
+Package pdftex.def Info: figures/C3.pdf used on input line 320.
+(pdftex.def)             Requested size: 102.02509pt x 59.47566pt.
+
+[6] [7 <E:/可逆/昊锐_SP/figures/Comparison/4Pixels/lena1.pdf> <E:/可逆/�
+�锐_SP/figures/Comparison/4Pixels/baboon1.pdf> <E:/可逆/昊锐_SP/figures/Co
+mparison/8Pixels/lena1.pdf> <E:/可逆/昊锐_SP/figures/Comparison/8Pixels/bab
+oon1.pdf> <E:/可逆/昊锐_SP/figures/C1.pdf> <E:/可逆/昊锐_SP/figures/C2.
+pdf> <E:/可逆/昊锐_SP/figures/C4.pdf> <E:/可逆/昊锐_SP/figures/C3.pdf>]
+[8] <figures/CapLena.pdf, id=252, 526.09978pt x 395.60397pt>
+File: figures/CapLena.pdf Graphic file (type pdf)
+
+<use figures/CapLena.pdf>
+Package pdftex.def Info: figures/CapLena.pdf used on input line 354.
+(pdftex.def)             Requested size: 210.59857pt x 158.35951pt.
+
+<figures/thPropLena.pdf, id=253, 520.40915pt x 381.37682pt>
+File: figures/thPropLena.pdf Graphic file (type pdf)
+
+<use figures/thPropLena.pdf>
+Package pdftex.def Info: figures/thPropLena.pdf used on input line 361.
+(pdftex.def)             Requested size: 215.28314pt x 157.76796pt.
+
+<figures/PropLenaNoT.pdf, id=254, 503.33737pt x 381.37682pt>
+File: figures/PropLenaNoT.pdf Graphic file (type pdf)
+
+<use figures/PropLenaNoT.pdf>
+Package pdftex.def Info: figures/PropLenaNoT.pdf used on input line 370.
+(pdftex.def)             Requested size: 234.0pt x 177.30345pt.
+
+<figures/EmbedwithTh.pdf, id=255, 1157.45706pt x 595.80092pt>
+File: figures/EmbedwithTh.pdf Graphic file (type pdf)
+
+<use figures/EmbedwithTh.pdf>
+Package pdftex.def Info: figures/EmbedwithTh.pdf used on input line 379.
+(pdftex.def)             Requested size: 327.59857pt x 168.63226pt.
+
+
+pdfTeX warning: pdflatex.exe (file E:/可逆/昊锐_SP/figures/Thresholds.pdf):
+ PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<figures/Thresholds.pdf, id=256, 517.31268pt x 380.87595pt>
+File: figures/Thresholds.pdf Graphic file (type pdf)
+
+<use figures/Thresholds.pdf>
+Package pdftex.def Info: figures/Thresholds.pdf used on input line 387.
+(pdftex.def)             Requested size: 234.0pt x 172.28758pt.
+
+<figures/Result/size/Lena.pdf, id=257, 380.99036pt x 284.63841pt>
+File: figures/Result/size/Lena.pdf Graphic file (type pdf)
+
+<use figures/Result/size/Lena.pdf>
+Package pdftex.def Info: figures/Result/size/Lena.pdf used on input line 402.
+(pdftex.def)             Requested size: 187.19714pt x 139.85623pt.
+
+<figures/Result/size/Baboon.pdf, id=258, 400.90678pt x 287.48303pt>
+File: figures/Result/size/Baboon.pdf Graphic file (type pdf)
+
+<use figures/Result/size/Baboon.pdf>
+Package pdftex.def Info: figures/Result/size/Baboon.pdf used on input line 409.
+
+(pdftex.def)             Requested size: 192.8172pt x 138.26663pt.
+ [9 <E:/可逆/昊锐_SP/figures/CapLena.pdf> <E:/可逆/昊锐_SP/figures/thPr
+opLena.pdf> <E:/可逆/昊锐_SP/figures/PropLenaNoT.pdf>] [10 <E:/可逆/昊�
+�_SP/figures/EmbedwithTh.pdf, page is rotated 90 degrees> <E:/可逆/昊锐_SP/
+figures/Thresholds.pdf> <E:/可逆/昊锐_SP/figures/Result/size/Lena.pdf> <E:/
+可逆/昊锐_SP/figures/Result/size/Baboon.pdf>]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 419.
+
+ (D:\Ctex\MiKTeX\tex\latex\base\omscmr.fd
+File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 419.
+ [11]
+<figures/Result/capacity/Lena.pdf, id=367, 384.3964pt x 281.35071pt>
+File: figures/Result/capacity/Lena.pdf Graphic file (type pdf)
+
+<use figures/Result/capacity/Lena.pdf>
+Package pdftex.def Info: figures/Result/capacity/Lena.pdf used on input line 44
+8.
+(pdftex.def)             Requested size: 194.21686pt x 142.15181pt.
+
+<figures/Result/capacity/Baboon.pdf, id=368, 398.62357pt x 281.3504pt>
+File: figures/Result/capacity/Baboon.pdf Graphic file (type pdf)
+
+<use figures/Result/capacity/Baboon.pdf>
+Package pdftex.def Info: figures/Result/capacity/Baboon.pdf used on input line 
+454.
+(pdftex.def)             Requested size: 201.23657pt x 142.03575pt.
+
+<figures/Result/capacity/Airplane.pdf, id=369, 384.3964pt x 281.35071pt>
+File: figures/Result/capacity/Airplane.pdf Graphic file (type pdf)
+
+<use figures/Result/capacity/Airplane.pdf>
+Package pdftex.def Info: figures/Result/capacity/Airplane.pdf used on input lin
+e 461.
+(pdftex.def)             Requested size: 194.21686pt x 142.15181pt.
+
+<figures/Result/capacity/Barbara.pdf, id=370, 384.3964pt x 281.35071pt>
+File: figures/Result/capacity/Barbara.pdf Graphic file (type pdf)
+
+<use figures/Result/capacity/Barbara.pdf>
+Package pdftex.def Info: figures/Result/capacity/Barbara.pdf used on input line
+ 467.
+(pdftex.def)             Requested size: 194.21686pt x 142.15181pt.
+
+<figures/Result/capacity/Lake.pdf, id=371, 384.3964pt x 281.35071pt>
+File: figures/Result/capacity/Lake.pdf Graphic file (type pdf)
+
+<use figures/Result/capacity/Lake.pdf>
+Package pdftex.def Info: figures/Result/capacity/Lake.pdf used on input line 47
+4.
+(pdftex.def)             Requested size: 194.21686pt x 142.15181pt.
+
+<figures/Result/capacity/Boat.pdf, id=372, 387.24202pt x 281.35071pt>
+File: figures/Result/capacity/Boat.pdf Graphic file (type pdf)
+
+<use figures/Result/capacity/Boat.pdf>
+Package pdftex.def Info: figures/Result/capacity/Boat.pdf used on input line 48
+0.
+(pdftex.def)             Requested size: 196.55914pt x 142.80865pt.
+
+<figures/Result/capacity/Peppers.pdf, id=373, 384.3964pt x 281.35071pt>
+File: figures/Result/capacity/Peppers.pdf Graphic file (type pdf)
+
+<use figures/Result/capacity/Peppers.pdf>
+Package pdftex.def Info: figures/Result/capacity/Peppers.pdf used on input line
+ 487.
+(pdftex.def)             Requested size: 194.21686pt x 142.15181pt.
+
+<figures/Result/capacity/Elaine.pdf, id=374, 384.3964pt x 281.35071pt>
+File: figures/Result/capacity/Elaine.pdf Graphic file (type pdf)
+
+<use figures/Result/capacity/Elaine.pdf>
+Package pdftex.def Info: figures/Result/capacity/Elaine.pdf used on input line 
+493.
+(pdftex.def)             Requested size: 194.21686pt x 142.15181pt.
+
+
+LaTeX Warning: Float too large for page by 3.0378pt on input line 497.
+
+[12] [13 <E:/可逆/昊锐_SP/figures/Result/capacity/Lena.pdf> <E:/可逆/昊�
+��_SP/figures/Result/capacity/Baboon.pdf> <E:/可逆/昊锐_SP/figures/Result/c
+apacity/Airplane.pdf> <E:/可逆/昊锐_SP/figures/Result/capacity/Barbara.pdf>
+ <E:/可逆/昊锐_SP/figures/Result/capacity/Lake.pdf> <E:/可逆/昊锐_SP/fi
+gures/Result/capacity/Boat.pdf> <E:/可逆/昊锐_SP/figures/Result/capacity/Pe
+ppers.pdf> <E:/可逆/昊锐_SP/figures/Result/capacity/Elaine.pdf>]
+(E:\可逆\昊锐_SP\sigpro.bbl
+Missing character: There is no � in font cmr8!
+Missing character: There is no � in font cmr8!
+ [14]) [15] (E:\可逆\昊锐_SP\sigpro.aux) ) 
+Here is how much of TeX's memory you used:
+ 3946 strings out of 495354
+ 53024 string characters out of 3183858
+ 124710 words of memory out of 3000000
+ 6996 multiletter control sequences out of 15000+200000
+ 11914 words of font info for 45 fonts, out of 3000000 for 9000
+ 14 hyphenation exceptions out of 8191
+ 42i,10n,30p,1487b,323s stack positions out of 5000i,500n,10000p,200000b,50000s
+<D:/Ctex/MiKTeX/fonts/type1/publi
+c/amsfonts/cm/cmbx10.pfb><D:/Ctex/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx7.p
+fb><D:/Ctex/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><D:/Ctex/MiKTeX/fo
+nts/type1/public/amsfonts/cmextra/cmex7.pfb><D:/Ctex/MiKTeX/fonts/type1/public/
+amsfonts/cm/cmmi10.pfb><D:/Ctex/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb
+><D:/Ctex/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><D:/Ctex/MiKTeX/fonts
+/type1/public/amsfonts/cm/cmmi8.pfb><D:/Ctex/MiKTeX/fonts/type1/public/amsfonts
+/cm/cmr10.pfb><D:/Ctex/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><D:/Ctex
+/MiKTeX/fonts/type1/public/amsfonts/cm/cmr5.pfb><D:/Ctex/MiKTeX/fonts/type1/pub
+lic/amsfonts/cm/cmr7.pfb><D:/Ctex/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pf
+b><D:/Ctex/MiKTeX/fonts/type1/public/amsfonts/cm/cmss10.pfb><D:/Ctex/MiKTeX/fon
+ts/type1/public/amsfonts/cm/cmsy10.pfb><D:/Ctex/MiKTeX/fonts/type1/public/amsfo
+nts/cm/cmsy5.pfb><D:/Ctex/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><D:/C
+tex/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><D:/Ctex/MiKTeX/fonts/type1
+/public/amsfonts/cm/cmti10.pfb><D:/Ctex/MiKTeX/fonts/type1/public/amsfonts/cm/c
+mti7.pfb><D:/Ctex/MiKTeX/fonts/type1/public/amsfonts/cm/cmti8.pfb><D:/Ctex/MiKT
+eX/fonts/type1/public/amsfonts/cm/cmtt8.pfb>
+Output written on sigpro.pdf (15 pages, 1313441 bytes).
+PDF statistics:
+ 482 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 146 words of extra memory for PDF output out of 10000 (max. 10000000)
+
